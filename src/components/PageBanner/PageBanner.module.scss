@@ -1,0 +1,65 @@
+@import '../../variables.scss';
+
+.pageBanner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5rem;
+    min-height: 25rem;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+}
+
+.figur {
+  width: 20%;
+  height: 100%;
+}
+
+
+.pageBannerImg {
+  bottom: 0;
+  position: absolute;
+  display: block;
+  @media only screen and (min-width: 1439px) {
+    width: 100%;
+    height: 100%;
+    object-fit: fill
+  }
+}
+
+.blink{
+    display: none;
+}
+
+.pageBannerHeader {
+    width: 73%;
+    height: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 20;
+    @media only screen and (max-width: $screen-xs) {
+        width: 100%;
+        text-shadow: 0.1rem 0.1rem 0.5rem black;
+    }
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 0;
+        @media only screen and (max-width: $screen-xs) {
+            margin: 0;
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+    h2 {
+        font-size: 2rem;
+        margin-top: 1rem;
+        @media only screen and (max-width: $screen-xs) {
+            text-align: center;
+            font-size: 1.5rem
+        }
+    }
+}

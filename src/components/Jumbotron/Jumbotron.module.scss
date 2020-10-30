@@ -1,0 +1,90 @@
+@import '../../variables.scss';
+
+.jumbotron {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+    &Content {
+        position: fixed;
+        top: 11%;
+        left: 50%;
+        transform: translate(-50%, -11%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 5;
+        white-space: nowrap;
+
+        .logo {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            object-fit: fill;
+        }
+
+        .link {
+            margin-top: 1rem;
+            float: right;
+            @media (max-width: $screen-sm) {
+                float: none;
+            }
+        }
+
+        @media only screen and (max-width: $screen-sm) {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            @media only screen and (max-width: $screen-xxxs) {
+                font-size: 3rem;
+            }
+        }
+        h2 {
+            &.locationText {
+                font-size: 2rem;
+            }
+            &.subsubTitle{
+                margin-top: 1rem;
+                font-size: 1.6rem;
+            }
+            margin: 0;
+            font-size: 2rem;
+            @media only screen and (max-width: $screen-xxxs) {
+                font-size: 2.5rem;
+            }
+            @media only screen and (max-width: $screen-xxxs) {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    img, video {
+        position: fixed;
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: -100;
+        background-size: cover;
+        object-fit: fill;
+        @media only screen and (max-width: 1920px) {
+            object-fit: cover;
+        }
+    }
+}
+
+.button {
+    border: 2px solid $color-logo-pink-dark;
+    color: white;
+
+    //this is bad, don't use it. remove it in the future
+    background: $color-logo-pink !important;
+    margin-top: 1rem;
+    &:hover {
+        background: $color-logo-pink-dark !important;
+    }
+}

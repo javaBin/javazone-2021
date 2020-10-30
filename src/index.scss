@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+@font-face {
+  font-family: 'lunatix';
+  src: url('./assets/LunatixLightRegular.otf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(25, 25, 25);
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@for $i from 1 through 6{
+  h#{$i} {
+    font-family: 'lunatix', serif;
+  }
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 140%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.ReactCollapse--collapse {
+  transition: height 300ms;
+}
