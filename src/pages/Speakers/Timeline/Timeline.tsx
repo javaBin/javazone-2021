@@ -98,7 +98,7 @@ const data = [
     }
 ];
 
-export default () => (
+const Timeline = () => (
     <div className='timeline'>
         <ul className='timeline__timeline'>
             {
@@ -125,3 +125,5 @@ export default () => (
         </ul>
     </div>
 );
+
+export default Timeline

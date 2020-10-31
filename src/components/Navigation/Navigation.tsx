@@ -26,10 +26,6 @@ interface NavigationProps extends RouteComponentProps {
     isNotFound?: boolean;
 }
 
-interface NavigationState {
-    subMenuItems: NavRoute[];
-}
-
 function Navigation(props: NavigationProps) {
 
     const windowWidth = useWindowWidth();

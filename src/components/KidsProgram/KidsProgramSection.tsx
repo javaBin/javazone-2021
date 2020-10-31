@@ -21,7 +21,7 @@ export function KidsProgramSection(props: KidsProgramSectionProps) {
             <p className={styles.speakers}>{props.speakers}</p>
             <div className={styles.container}>
                 <div className={styles.imageBlock}>
-                    <img className={styles.img} src={imagePath}/>
+                    <img className={styles.img} alt="An example of the main thing" src={imagePath}/>
                 </div>
                 <div className={styles.content}>
                     {props.children}
