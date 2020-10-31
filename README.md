@@ -1,6 +1,6 @@
-# JavaZone 2020
+# JavaZone 2021
 
-This is the repository for https://2020.javazone.no.
+This is the repository for https://2021.javazone.no.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
