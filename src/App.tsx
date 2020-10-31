@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 import Navigation, { NavRoute } from './components/Navigation/Navigation';
 import { FrontPage } from './pages/Frontpage/Frontpage';
 import Footer from './components/Footer/Footer';
@@ -49,7 +49,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <HashRouter>
       <>
         <Navigation sticky routes={routes} />
         <Route component={ScrollToTop}/>
@@ -74,7 +74,7 @@ function App() {
           We have given you a dedicated cookie from our cookie jar in order to store your favorite program schedule. We also use cookies to improve your experience on our site. By using this site you agree to this. For more information please visit our <InlineLink color="pink" url="/privacy-cookies">cookie information page.</InlineLink>
         </CookieDisclaimer>
       </>
-    </Router>
+    </HashRouter>
   );
 }
 
