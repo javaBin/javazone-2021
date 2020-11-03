@@ -5,7 +5,7 @@ export function FrontPage() {
     return (
         <>
             <Jumbotron title="JavaZone"
-                       subTitle="January is canceled"
+                       subTitle="January is cancelled"
                        location="Stay tuned for the September dates" />
         </>
     )
