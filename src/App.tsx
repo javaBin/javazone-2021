@@ -49,7 +49,7 @@ function App() {
   }, []);
 
   return (
-    <HashRouter>
+    <HashRouter basename="/">
       <>
         <Navigation sticky routes={routes} />
         <Route component={ScrollToTop}/>
