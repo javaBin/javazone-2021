@@ -30,7 +30,7 @@ export function BuyTicketsPage() {
             <VikingBanner header="The Ticket Booth" subHeader="Get your tickets now!"/>
             <CenterSection>
                 <div className={styles.back}>
-                    <Link url="/tickets">
+                    <Link color="green" url="/tickets">
                         Back
                     </Link>
                 </div>
