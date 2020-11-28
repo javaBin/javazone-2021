@@ -10,13 +10,13 @@ export function CoronaPage() {
             <VikingBanner header="Information about JavaZone in context of COVID-19" subHeader=""/>
             <Section color="pink" header={<h1>Information</h1>}>
                 <p>
-                    Due to the COVID-19 outbreak we have decided to postpone JavaZone 2020 until September 2021.
+                    Due to the COVID-19 outbreak we have decided to postpone the physical JavaZone 2020 until September 8-9th 2021.
                 </p>
             </Section>
             <CenterSection color="pink" header={<h1>Frequently asked questions (FAQ)</h1>}/>
-            <Section color="pink" header={<h1>So I have already bought a ticket, is it still valid?</h1>}>
+            <Section color="pink" header={<h1>So I have already bought a ticket for Javazone 2020, is it still valid?</h1>}>
                 <p>
-                    Yes, of course. Your ticket is valid for the conference in September.
+                    Yes, of course. Your ticket is valid for the conference in September 2021.
                 </p>
             </Section>
             <Section color="pink" header={<h1>I already have a ticket, but I cannot attend, can I get a refund?</h1>}>
