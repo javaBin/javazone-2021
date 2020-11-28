@@ -10,14 +10,13 @@ import classnames from 'classnames';
 import styles from './Speakers.module.scss';
 import { PresentationFormat } from '../../core/models/PresentationFormat.model';
 import { lightning, presentation, workshop } from '../../core/data/PresentationFormats.data';
-import Timeline from "./Timeline/Timeline";
 import {Figure} from "../../components/Figure/Figure";
 
 
 export function SpeakersPage() {
     return (
         <>
-            <VikingBanner header="Call for Speakers" subHeader="Speak at JavaZone 2020" />
+            <VikingBanner header="Call for Speakers" subHeader="Speak at JavaZone 2021" />
             <Section color="pink" header={<h1>About JavaZone</h1>}>
                 <p>
                     JavaZone 2021 will be the 20th physical JavaZone conference and will consist of a day of pre-conference workshop, followed by two days of lightning talks and presentations in September.
@@ -32,17 +31,16 @@ export function SpeakersPage() {
                     JavaZone hosts both international and Norwegian speakers. We'd love to have you join us the coming September!
                 </p>
                 <p>
-                    Our call for speakers remains open until the <b style={{textDecoration: "underline"}}>31st of August</b>. Presentations for JavaZone VR are selected ongoing and are likely finalized prior to this date.
+                    Our call for speakers opens <b style={{textDecoration: "underline"}}>February 1st</b> until the <b style={{textDecoration: "underline"}}>April 9th</b>.
                 </p>
-                <Link external color="pink" url="https://talks.javazone.no">Submit your talk!</Link>
             </Section>
             <ImageSection bottom imageName="2018/180912_JavaZone_0039" />
             <Section color="pink" header={<h1>What is it like speaking at JavaZone?</h1>}>
                 <p>
-                    Over the last decade JavaZone has grown to become one of the most important Java events in Europe! You can see for yourself – over 1300 videos from previous years talks are available for free at <InlineLink color="blue" external url='https://vimeo.com/javazone'>Vimeo</InlineLink>, and the <InlineLink color="blue" external url='https://2019.javazone.no/program'>full program from JavaZone 2019</InlineLink> is also available.
+                    Over the last decade JavaZone has grown to become one of the most important Java events in Europe! You can see for yourself – over 1300 videos from previous years talks are available for free at <InlineLink color="pink" external url='https://vimeo.com/javazone'>Vimeo</InlineLink>, and the <InlineLink color="pink" external url='https://2019.javazone.no/program'>full program from JavaZone 2019</InlineLink> is also available.
                 </p>
                 <p>
-                    We can brag as much as we want, but JavaZone would be nothing without all the great speakers! That's why we need your help to make sure that JavaZone 2020 will be at least as awesome as the earlier events. If you think you have something interesting to share, please submit your talk or workshop.
+                    We can brag as much as we want, but JavaZone would be nothing without all the great speakers! That's why we need your help to make sure that JavaZone 2021 will be at least as awesome as the earlier events. If you think you have something interesting to share, please submit your talk or workshop.
                 </p>
                 <p>
                     JavaZone is committed to diversity, and we are especially interested in quality submissions from groups that are under-represented in tech.
@@ -62,12 +60,6 @@ export function SpeakersPage() {
                 </ul>
             </CenterSection>
             <Figure name="askhild"/>
-            <Section color="pink" header={<h1>Get Some Inspiration</h1>}>
-                <h3>Workshop for Potential Speakers</h3>
-                <p>
-                    On March 17th, we will be <InlineLink color="pink" external url='https://www.meetup.com/javaBin/events/268254999/'>hosting a workshop</InlineLink> for all those considering submitting a talk to JavaZone.
-                </p>
-            </Section>
             <Section color="pink" header={<h1>Audience and Topics</h1>}>
                 <p>
                     JavaZone is a conference for developers and technical architects, with an emphasis on technical talks. However, we are open to talks about other areas, including methodology, project management, and other topics related to programming.
@@ -88,13 +80,10 @@ export function SpeakersPage() {
                     Some tips and tricks about your submission
                 </Link>
             </Section>
-            <CenterSection color="pink" header={<h1>Dates & Deadlines for JavaZone 2020</h1>}>
-                <Timeline />
-            </CenterSection>
             <Section color="pink" header={<h1>What’s in it for me?</h1>}>
                 <h3>Accepted presentations, lightning talks, and workshops</h3>
                 <p>
-                    As a JavaZone speaker, you get free admission to the conference. Additionally, you are also invited to the speakers' dinner, held on January 19th. Finally, you can apply for a place on JourneyZone, our annual speaker adventure.
+                    As a JavaZone speaker, you get free admission to the conference. Additionally, you are also invited to the speakers' dinner, held on September 7th. Finally, you can apply for a place on JourneyZone, our annual speaker adventure.
                 </p>
                 <h3>Coverage of Expenses</h3>
                 <p>
@@ -103,7 +92,7 @@ export function SpeakersPage() {
             </Section>
             <Section color="pink" header={<h1>Important principles</h1>}>
                 <p>
-                    JavaZone is proud to be an independent and community-driven conference. It is organized by volunteers from <InlineLink color="blue" external url="https://javabin.no">javaBin</InlineLink> (the Norwegian Java User Group) and is run as a non-profit organization. This means that we have three important principles for selecting talks:
+                    JavaZone is proud to be an independent and community-driven conference. It is organized by volunteers from <InlineLink color="pink" external url="https://javabin.no">javaBin</InlineLink> (the Norwegian Java User Group) and is run as a non-profit organization. This means that we have three important principles for selecting talks:
                 </p>
                 <ul>
                     <li>We do not sell speaker slots.</li>
