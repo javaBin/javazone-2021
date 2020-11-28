@@ -26,10 +26,10 @@ export function AboutUsPage() {
                     Organizing a conference of this size on a voluntary basis is a lot of hard work (and it is great fun too!). The conference organization is represented by the JavaZone Core Team – a group of main organizers of the conference, where each representative is responsible for one or several areas or is leading a group of other JUG members. An example of such groups can be Program Committee, IT systems, etc.
                 </p>
                 <p>
-                    The JavaZone Core Team for 2020:
+                    The JavaZone Core Team for 2021:
                     <List>
                         <li><em>Leader</em> – <InlineLink color="green" url="javazone@java.no">javazone@java.no</InlineLink> – Anders Karlsen</li>
-                        <li><em>Program Committee</em> – <InlineLink color="green" url="program@java.no">program@java.no</InlineLink> – Rafael Winterhalter</li>
+                        <li><em>Program Committee</em> – <InlineLink color="green" url="program@java.no">program@java.no</InlineLink> – Jan Erik Robertsen</li>
                         <li><em>Partners</em> – <InlineLink color="green" url="partner@java.no">partner@java.no</InlineLink> – Gareth Western</li>
                         <li><em>Volunteers</em> – <InlineLink color="green" url="student@java.no">student@java.no</InlineLink> – Livar Bergheim</li>
                     </List>
