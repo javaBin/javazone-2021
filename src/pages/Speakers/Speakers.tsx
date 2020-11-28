@@ -87,7 +87,7 @@ export function SpeakersPage() {
                 </p>
                 <h3>Coverage of Expenses</h3>
                 <p>
-                    Please see our <InlineLink color="pink" external url='/speakers/monetary-policy'>reimbursement policy</InlineLink> if you have any questions regarding coverage of other expenses.
+                    Please see our <InlineLink color="pink" url='/speakers/monetary-policy'>reimbursement policy</InlineLink> if you have any questions regarding coverage of other expenses.
                 </p>
             </Section>
             <Section color="pink" header={<h1>Important principles</h1>}>
@@ -116,9 +116,9 @@ function Format(props: PresentationFormat) {
 
     function getIconElement(icon: string) {
         switch(icon) {
-            case 'zap': return <Zap size={36} />
-            case 'book-open': return <BookOpen size={36} />
-            case 'monitor': return <Monitor size={36} />
+            case 'zap': return <Zap size={36} />;
+            case 'book-open': return <BookOpen size={36} />;
+            case 'monitor': return <Monitor size={36} />;
         }
     }
 
@@ -130,4 +130,4 @@ function Format(props: PresentationFormat) {
             <p className={classnames(styles.format, styles.description)}>{props.description}</p>
         </li>
     );
-};
+}
