@@ -26,7 +26,7 @@ export function PartnersPage() {
     shuffleArray(partnerList);
     return (
         <>
-            <VikingBanner header="Partner love" subHeader="September"/>
+            <VikingBanner header="Partner love" subHeader="September 8th - 9th 2021"/>
             <CenterSection color="blue" header={<h1>JavaZone 2021: Bigger and better than ever</h1>}>
                 <p>
                     JavaZone started out in 2001 as a small conference for Java developers but has since then evolved to become one of the largest developer conferences in the world. Each year thousands of people gather in Oslo Spektrum for three full days of learning, mingling, and fun!
@@ -34,12 +34,12 @@ export function PartnersPage() {
             </CenterSection>
             <Section color="blue" header={<h1>Last four years: Completely. Sold. Out.</h1>}>
                 <p>
-                    Last year, a record breaking 3200 people attended JavaZone. We were completely sold out of tickets AND partner stands. The same happened last year, and the year before, and the year before. So you might want to join in early if you want to be part of the conference!
+                    In 2019, a record breaking 3200 people attended JavaZone. We were completely sold out of tickets AND partner stands. The same happened last year, and the year before, and the year before. So you might want to join in early if you want to be part of the conference!
                 </p>
             </Section>
             <Section color="blue" header={<h1>Our philosophy: Partners, not sponsors</h1>}>
                 <p>
-                    We want JavaZone‘s Expo Area to be an attractive space where our partners and participants can hang out and spend time together. In previous years, our partners have done a great job helping us achieve this goal, and we look forward to seeing what they bring to JavaZone 2020! JavaZone’s Expo Area is a vibrant, busy space full of life and activity. As a partner you are not just supporting our conference economically – you participate in the event and help creating a unique atmosphere. We work closely with our partners to help them realize their ideas and make the most out of their stands. Have you got a great concept for your JavaZone stand and need help to realize it? Don’t be shy - just ask us. Almost anything is possible!
+                    We want JavaZone‘s Expo Area to be an attractive space where our partners and participants can hang out and spend time together. In previous years, our partners have done a great job helping us achieve this goal, and we look forward to seeing what they bring to JavaZone 2021! JavaZone’s Expo Area is a vibrant, busy space full of life and activity. As a partner you are not just supporting our conference economically – you participate in the event and help creating a unique atmosphere. We work closely with our partners to help them realize their ideas and make the most out of their stands. Have you got a great concept for your JavaZone stand and need help to realize it? Don’t be shy - just ask us. Almost anything is possible!
                 </p>
             </Section>
             <div className={styles.partnerInfo}>
@@ -110,7 +110,7 @@ export function PartnersPage() {
             </Section>
             <Figure name="ragnar"/>
             <CenterSection color="blue" header={<h1>Partnership prices</h1>}>
-                <TicketPrice>73.000</TicketPrice>
+                <TicketPrice>78.000</TicketPrice>
 
                 <p>
                     <i>Note that all 50+ partnerships for JavaZone 2019 were sold out long before the conference.</i>
@@ -120,23 +120,23 @@ export function PartnersPage() {
                     We also have some add-ons, as well as tickets for your employees, priced below.
                 </p>
                 <p>
-                    <i style={{fontSize: '1.2rem'}}>After September 1st, the price will increase to NOK 88.000,-.</i><br />
+                    <i style={{fontSize: '1.2rem'}}>After Mars 1st, the price will increase to NOK 93.000,-.</i><br />
                     <i style={{fontSize: '1rem'}}>All prices are ex VAT and ticket fee (NOK 120 per ticket)</i>
                 </p>
             </CenterSection>
             <Section color="blue" header={<h1>Partnership stand</h1>}>
                 <PartnerPriceList>
-                    <PartnerPrice item="Extra Stand Space">40.000</PartnerPrice>
-                    <PartnerPrice item="Restaurant Stand">67.000</PartnerPrice>
-                    <PartnerPrice item="Concept Stand">62.000</PartnerPrice>
+                    <PartnerPrice item="Extra Stand Space">43.000</PartnerPrice>
+                    <PartnerPrice item="Restaurant Stand">70.000</PartnerPrice>
+                    <PartnerPrice item="Concept Stand">65.000</PartnerPrice>
                 </PartnerPriceList>
             </Section>
             <Section color="blue" header={<h1>Partnership ticket</h1>}>
                 <PartnerPriceList>
-                    <PartnerPrice item="Tickets for employees (1 - 30)">6.190</PartnerPrice>
-                    <PartnerPrice item="Tickets for employees (31 - 50)">5.990</PartnerPrice>
-                    <PartnerPrice item="Tickets for employees (51 - ∞)">5.790</PartnerPrice>
-                    <PartnerPrice item="Tickets for employees (Partner Late-Bird - After October 30th, 2020)">6.790</PartnerPrice>
+                    <PartnerPrice item="Tickets for employees (1 - 30)">6.890</PartnerPrice>
+                    <PartnerPrice item="Tickets for employees (31 - 50)">6.690</PartnerPrice>
+                    <PartnerPrice item="Tickets for employees (51 - ∞)">6.490</PartnerPrice>
+                    <PartnerPrice item="Tickets for employees (Partner Late-Bird - After October 30th, 2020)">7.490</PartnerPrice>
                 </PartnerPriceList>
             </Section>
             <ImageSection imageName="2018/180912_JavaZone_0158" />
