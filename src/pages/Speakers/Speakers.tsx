@@ -31,8 +31,9 @@ export function SpeakersPage() {
                     JavaZone hosts both international and Norwegian speakers. We'd love to have you join us the coming September!
                 </p>
                 <p>
-                    Our call for speakers opens <b style={{textDecoration: "underline"}}>February 1st</b> until the <b style={{textDecoration: "underline"}}>April 9th</b>.
+                    Our call for speakers is open from <b style={{textDecoration: "underline"}}>February 1st</b> until <b style={{textDecoration: "underline"}}>April 9th</b>.
                 </p>
+                <Link external color="pink" url="https://talks.javazone.no">Submit your talk!</Link>
             </Section>
             <ImageSection bottom imageName="2018/180912_JavaZone_0039" />
             <Section color="pink" header={<h1>What is it like speaking at JavaZone?</h1>}>
