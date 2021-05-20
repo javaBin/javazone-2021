@@ -29,7 +29,7 @@ export function InlineLink(props: InlineLinkProps) {
     const cls = classNames(styles.inlineLink, getColorCls(props.color))
     return (
         props.external 
-            ? <a className={cls} href={props.url} target={props.noBlankTarget ? '' : '_blank'}>{props.children}</a>
+            ? <a className={cls} href={props.url} target={props.noBlankTarget ? '' : '_blank'} rel="noreferrer">{props.children}</a>
             : <Link className={cls} to={props.url}>
                 {props.children}
             </Link>

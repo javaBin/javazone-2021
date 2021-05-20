@@ -30,7 +30,7 @@ function Link(props: LinkProps) {
     const cls = classNames(styles.link, getColorCls(props.color))
     return (
         props.external 
-            ?   <a href={props.url} className={cls} target={props.noBlankTarget ? '' : '_blank'}>
+            ?   <a href={props.url} className={cls} rel="noreferrer" target={props.noBlankTarget ? '' : '_blank'}>
                     <span >{props.children}</span>
                 </a>
             : 
