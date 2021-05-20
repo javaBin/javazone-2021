@@ -22,7 +22,7 @@ export function SpeakersPage() {
                     JavaZone 2021 will be the 20th physical JavaZone conference and will consist of a day of pre-conference workshop, followed by two days of lightning talks and presentations in December.
                 </p>
                 <p>
-                    Originally, JavaZone 2020 should have taken place in December 2020, just as its 19 prior editions. But as a consequence of the Coronavirus-outbreak we have moved the conference to a later date.
+                    Originally, JavaZone 2020 should have taken place in September 2020, just as its 19 prior editions. But as a consequence of the Coronavirus-outbreak we have moved the conference to a later date.
                 </p>
                 <p>
                     JavaZone 2019 was completely sold out, with more than 3200 attendees enjoying 127 sessions. For JavaZone VR, we expect several hundret participants.
@@ -31,7 +31,7 @@ export function SpeakersPage() {
                     JavaZone hosts both international and Norwegian speakers. We'd love to have you join us the coming December!
                 </p>
                 <p>
-                    Our call for speakers is open from <b style={{textDecoration: "underline"}}>February 1st</b> until <b style={{textDecoration: "underline"}}>April 9th</b>.
+                    Our call for speakers is open from <b style={{textDecoration: "underline"}}>February 1st</b> until <b style={{textDecoration: "underline"}}>August 15th</b>.
                 </p>
                 <Link external color="pink" url="https://talks.javazone.no">Submit your talk!</Link>
             </Section>
@@ -71,7 +71,7 @@ export function SpeakersPage() {
             </Section>
             <Section color="pink" header={<h1>Ongoing Evaluation of Talks</h1>}>
                 <p>
-                    Each year we receive hundreds of submissions and we consider each submission as it arrives. Due to a large number of submissions, we can however not guarantee that you will hear from us immediately. We do however answer all submissions and try to do so no later than in October.
+                    Each year we receive hundreds of submissions and we consider each submission as it arrives. Due to a large number of submissions, we can however not guarantee that you will hear from us immediately. We do however answer all submissions and try to do so no later than in September.
                 </p>
                 <p>
                     Our advice to you is simple. <strong>Submit early!</strong> The earlier you submit, the more likely you are to be noticed. Avoid drowning in the end-of-Call for Speakers-tsunami!
@@ -104,7 +104,7 @@ export function SpeakersPage() {
                     If your talk adheres to these very important principles, you are more than welcome to submit it to our Call for Speakers!
                 </p>
             </Section>
-            <CenterSection color="pink" header={<h1>We hope to see you at JavaZone 2020 – please feel free to spread the word to your local community!</h1>}>
+            <CenterSection color="pink" header={<h1>We hope to see you at JavaZone 2021 – please feel free to spread the word to your local community!</h1>}>
                 <p>
                     Best regards,<br />the JavaZone Program Committee
                 </p>

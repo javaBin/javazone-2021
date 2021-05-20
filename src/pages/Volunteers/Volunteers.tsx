@@ -23,11 +23,11 @@ export function VolunteersPage() {
                 <p>
                     Har du lyst til å bidra til at disse menneskene skal få en fantastisk opplevelse, og også få ta del
                     i dette selv?<br/>
-                    Er du student høsten 2020?
+                    Er du student høsten 2021?
                 </p>
                 <p>
                     Perfekt! Du er akkurat den vi leter etter! <br/>
-                    Vi åpner for søknader våren 2020. Du kan sette deg på vår e-postliste for å få beskjed når vi åpner.                    <br/>
+                    Vi åpner for søknader våren 2021. Du kan sette deg på vår e-postliste for å få beskjed når vi åpner.                    <br/>
                 </p>
                 <p>
                     <Link external url="http://eepurl.com/dt67aj">Meld deg på e-postlisten!</Link>
@@ -89,7 +89,7 @@ export function VolunteersPage() {
             </Section>
             <Section header={<h1>Når må jeg søke?</h1>}>
                 <p>
-                    Vi åpner for søknader til å bli frivillig i juli/august, og søknadsfristen er rundt månedsskiftet mai/juni.
+                    Vi åpner for søknader til å bli frivillig i juli/august, og søknadsfristen er rundt månedsskiftet september/oktober.
                 </p>
             </Section>
             <Section header={<h1>I don’t speak Norwegian… What about me?</h1>}>
