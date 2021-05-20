@@ -11,7 +11,7 @@ import Link from "../../components/Link/Link";
 export function TicketsPage() {
     return (
         <>
-            <VikingBanner header="The Ticket Booth" subHeader="Come join us in Oslo, in September 8-9th, 2021"/>
+            <VikingBanner header="The Ticket Booth" subHeader="Come join us in Oslo, in December 8-9th, 2021"/>
 
 
             <CenterSection color="green" header={<h1>Get your tickets for JavaZone 2021 – Early Bird</h1>}>

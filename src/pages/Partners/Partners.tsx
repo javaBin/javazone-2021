@@ -26,7 +26,7 @@ export function PartnersPage() {
     shuffleArray(partnerList);
     return (
         <>
-            <VikingBanner header="Partner love" subHeader="September 8th - 9th 2021"/>
+            <VikingBanner header="Partner love" subHeader="December 8th - 9th 2021"/>
             <CenterSection color="blue" header={<h1>JavaZone 2021: Bigger and better than ever</h1>}>
                 <p>
                     JavaZone started out in 2001 as a small conference for Java developers but has since then evolved to become one of the largest developer conferences in the world. Each year thousands of people gather in Oslo Spektrum for three full days of learning, mingling, and fun!

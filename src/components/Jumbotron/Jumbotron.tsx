@@ -11,17 +11,6 @@ interface JumbotronProps {
     location?: string;
 }
 
-/*
-function FrontpageButton(){
-    const cls = classNames(styles.button, linkStyles.link)
-    return <RouterLink to="/live" className={cls}>
-               <span>
-                   The VR videos are now live 🎥
-               </span>
-    </RouterLink>
-}
- */
-
 export function Jumbotron(props: JumbotronProps) {
 
     const canPlayWebm = useCanPlayVideoType('webm');
@@ -43,7 +32,7 @@ export function Jumbotron(props: JumbotronProps) {
                 <h1>{props.title}</h1>
                 <h2>{props.subTitle}</h2>
                 <h2>{props.location}</h2>
-                {/*<FrontpageButton/>*/}
+                <h3 className={styles.subsubTitle}>{props.subsubTitle}</h3>
             </div>
         </div>
     )

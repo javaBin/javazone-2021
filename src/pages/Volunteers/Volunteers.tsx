@@ -81,8 +81,8 @@ export function VolunteersPage() {
             <Section header={<h1>Når må jeg møte opp som frivillig?</h1>}>
                 <p>
                     Det er oppmøte i Oslo Spektrum kl. 19:00 tirsdag
-                    8. september for opplæring, noen oppgaver, mat og omvisning i lokalene. JavaZone er
-                    ferdig kl. 18 på torsdag 10. september. Da rigger vi ned, og deretter går vi videre for
+                    7. desember for opplæring, noen oppgaver, mat og omvisning i lokalene. JavaZone er
+                    ferdig kl. 18 på torsdag 9. desember. Da rigger vi ned, og deretter går vi videre for
                     mat og drikke. Vi spanderer :) Detaljer blir sendt ut til de som blir tatt opp som
                     frivillige.
                 </p>

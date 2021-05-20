@@ -19,16 +19,16 @@ export function SpeakersPage() {
             <VikingBanner header="Call for Speakers" subHeader="Speak at JavaZone 2021" />
             <Section color="pink" header={<h1>About JavaZone</h1>}>
                 <p>
-                    JavaZone 2021 will be the 20th physical JavaZone conference and will consist of a day of pre-conference workshop, followed by two days of lightning talks and presentations in September.
+                    JavaZone 2021 will be the 20th physical JavaZone conference and will consist of a day of pre-conference workshop, followed by two days of lightning talks and presentations in December.
                 </p>
                 <p>
-                    Originally, JavaZone 2020 should have taken place in September 2020, just as its 19 prior editions. But as a consequence of the Coronavirus-outbreak we have moved the conference to a later date.
+                    Originally, JavaZone 2020 should have taken place in December 2020, just as its 19 prior editions. But as a consequence of the Coronavirus-outbreak we have moved the conference to a later date.
                 </p>
                 <p>
                     JavaZone 2019 was completely sold out, with more than 3200 attendees enjoying 127 sessions. For JavaZone VR, we expect several hundret participants.
                 </p>
                 <p>
-                    JavaZone hosts both international and Norwegian speakers. We'd love to have you join us the coming September!
+                    JavaZone hosts both international and Norwegian speakers. We'd love to have you join us the coming December!
                 </p>
                 <p>
                     Our call for speakers is open from <b style={{textDecoration: "underline"}}>February 1st</b> until <b style={{textDecoration: "underline"}}>April 9th</b>.
@@ -84,7 +84,7 @@ export function SpeakersPage() {
             <Section color="pink" header={<h1>What’s in it for me?</h1>}>
                 <h3>Accepted presentations, lightning talks, and workshops</h3>
                 <p>
-                    As a JavaZone speaker, you get free admission to the conference. Additionally, you are also invited to the speakers' dinner, held on September 7th.
+                    As a JavaZone speaker, you get free admission to the conference. Additionally, you are also invited to the speakers' dinner, held on December 7th.
                 </p>
                 <h3>Coverage of Expenses</h3>
                 <p>
