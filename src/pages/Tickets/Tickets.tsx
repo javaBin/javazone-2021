@@ -27,14 +27,14 @@ export function TicketsPage() {
                     Prices are ex. VAt and ticket fee (NOK 120 per ticket)
                 </p>
                 <p>
-                    After April 1st, the ticket price will be NOK 7,890.00,- (Late Bird price).
+                    After July 1st, the ticket price will be NOK 7,890.00,- (Late Bird price).
                 </p>
                 <Link color="green" url="/tickets/buy">Get your tickets now!</Link>
             </Section>
             <ImageSection imageName="tickets_2" />
             <Section color="green" header={<h1>Working for one of our partners?</h1>}>
                 <p>
-                    All partners of JavaZone get reduced prices on tickets. Partners can buy tickets at a reduced price until Mars 1st. Read more about <InlineLink color="green" url="/partners">JavaZone partnership</InlineLink> here.
+                    All partners of JavaZone get reduced prices on tickets. Partners can buy tickets at a reduced price until October 1st. Read more about <InlineLink color="green" url="/partners">JavaZone partnership</InlineLink> here.
                 </p>
             </Section>
             <Section color="green" header={<h1>Need more than one ticket?</h1>}>
@@ -50,7 +50,7 @@ export function TicketsPage() {
             </Section>
             <Section color="green" header={<h1>Refund policy</h1>}>
                 <p>
-                    If you need a refund on your ticket, send an email with your request to <InlineLink color="green" external noBlankTarget url="mailto:javazone@java.no">javazone@java.no</InlineLink>. We'll refund the full ticket price minus a small processing fee (to cover credit card fees or invoice fees) for requests submitted before June 1st. Refund requests received after June 1st will only be accepted if javaBin are able to resell the tickets. For tickets bought in bulk (applies to both partner tickets and large regular orders), a maximum of 5 tickets can be refunded under this policy.
+                    If you need a refund on your ticket, send an email with your request to <InlineLink color="green" external noBlankTarget url="mailto:javazone@java.no">javazone@java.no</InlineLink>. We'll refund the full ticket price minus a small processing fee (to cover credit card fees or invoice fees) for requests submitted before September 1st. Refund requests received after September 1st will only be accepted if javaBin are able to resell the tickets. For tickets bought in bulk (applies to both partner tickets and large regular orders), a maximum of 5 tickets can be refunded under this policy.
                 </p>
             </Section>
             <ImageSection imageName="2018/180912_JavaZone_0035" />
@@ -61,7 +61,7 @@ export function TicketsPage() {
             </Section>
             <CenterSection color="green" header={<h1>Need more info about JavaZone?</h1>}>
                 <p>
-                    We'll release more information about the conference as fast as possible, and the detailed program with information about all the talks will be ready in August.
+                    We'll release more information about the conference as fast as possible, and the detailed program with information about all the talks will be ready in November.
                 </p>
                 <p>
                     Don't wait too long buying your ticket, though – 2019 all of the 3,200 spots were gone, and we had long waiting lists. We expect a decent amount of interest this year as well.

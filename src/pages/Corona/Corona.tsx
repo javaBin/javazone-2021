@@ -21,7 +21,7 @@ export function CoronaPage() {
             </Section>
             <Section color="pink" header={<h1>I already have a ticket, but I cannot attend, can I get a refund?</h1>}>
                 <p>
-                    Sure. Just send a mail to <InlineLink color="pink" external noBlankTarget url="mailto:javazone@java.no">javazone@java.no</InlineLink> and we will refund the full ticket price minus a small processing fee (to cover credit card fees or invoice fees). The refund offer is valid until June 1st 2021.
+                    Sure. Just send a mail to <InlineLink color="pink" external noBlankTarget url="mailto:javazone@java.no">javazone@java.no</InlineLink> and we will refund the full ticket price minus a small processing fee (to cover credit card fees or invoice fees). The refund offer is valid until September 1st 2021.
                 </p>
             </Section>
             <Section color="pink" header={<h1>What will the format of the conference in December be?</h1>}>
