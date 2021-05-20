@@ -17,7 +17,6 @@ import {SpeakersPage} from "./pages/Speakers/Speakers";
 import {MonetaryPolicyPage} from "./pages/Speakers/MonetaryPolicy";
 import {SpeakerTipsPage} from "./pages/Speakers/Tips";
 import {BuyTicketsPage} from "./pages/Tickets/BuyTicketsPage";
-import {JourneyZonePage} from "./pages/JourneyZone/JourneyZone";
 import {CoronaPage} from "./pages/Corona/Corona";
 
 const routes: NavRoute[] = [
@@ -25,7 +24,6 @@ const routes: NavRoute[] = [
   {title: 'Tickets', url: '/tickets', show: true},
   {title: 'Tickets', url: '/tickets/buy', show: false},
   {title: 'Speakers', url: '/speakers', show: true},
-  {title: 'JourneyZone', url: '/journeyzone', show: false},
   {title: 'Partners', url: '/partners', show: true},
   {title: 'Kids', url: '/kids', show: false},
   {title: 'Frivillige', url: '/volunteers', show: false},
@@ -64,7 +62,6 @@ function App() {
           <Route exact path="/partners" component={PartnersPage} />
           <Route exact path="/about" component={AboutUsPage} />
           <Route exact path="/volunteers" component={VolunteersPage} />
-          <Route exact path="/journeyzone" component={JourneyZonePage} />
           <Route exact path="/privacy-cookies" component={CookieInfoPage} />
           <Route exact path="/corona" component={CoronaPage} />
           <Route component={NotFoundPage} />
