@@ -71,7 +71,7 @@ export const partnerList: Partner[] = [
         "name": "Miles"
     },
     {
-        "homepageUrl": "https://www.itera.no/",
+        "homepageUrl": "https://www.itera.com/",
         "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/itera.svg",
         "name": "Itera"
     },
