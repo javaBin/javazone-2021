@@ -46,7 +46,7 @@ export function PartnersPage() {
                 <h1 className={styles.partnerHeader}>Partners</h1>
                 <div className={styles.partnersContainer}>
                 {partnerList.map(partner => {
-                    return <a href={partner.homepageUrl}>
+                    return <a className={styles.partnerBlock} href={partner.homepageUrl}>
                         <img className={styles.logo} alt={partner.name} src={partner.logoUrl}/>
                     </a>
                 })}
