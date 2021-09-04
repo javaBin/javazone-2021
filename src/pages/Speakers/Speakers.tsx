@@ -78,7 +78,7 @@ export function SpeakersPage() {
                 </p>
                 <br />
                 <Link color="pink" url='/speakers/tips'>
-                    Some tips and tricks about your submission
+                    Submission tips
                 </Link>
             </Section>
             <Section color="pink" header={<h1>What’s in it for me?</h1>}>
