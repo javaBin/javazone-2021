@@ -2,7 +2,6 @@ import React from 'react';
 import { VikingBanner } from '../../components/PageBanner/PageBanner';
 import { Section } from '../../components/Section/Section';
 import { InlineLink } from '../../components/InlineLink/InlineLink';
-import { List } from '../../components/List/List';
 
 export function CookieInfoPage() {
     return (
@@ -14,30 +13,30 @@ export function CookieInfoPage() {
                 </p>
                 <p>
                     A cookie can be classified by its lifespan and the domain to which it belongs. By lifespan, a cookie is one of the following:
-                    <List>
+                    <ul>
                         <li>session cookie which is erased when the user closes the browser</li> 
                         <li>persistent cookie which remains on the user's computer/device for a pre-defined period of time.</li>
-                    </List>
+                    </ul>
                 </p>
                 <p> 
                     As for the domain to which it belongs, there are either:
-                    <List>
+                    <ul>
                         <li>first-party cookies which are set by the web server of the visited page and share the same domain</li>
                         <li>third-party cookies are stored by a different domain to the visited page's domain. This can happen when the webpage references a file, such as JavaScript, located outside its domain.</li>
-                    </List>
+                    </ul>
                 </p>
             </Section>
             <Section color="blue" header={<h1>How we use cookies</h1>}>
                 <p>
                     The cookies we use has two main purposes:
-                    <List>
+                    <ul>
                         <li>To let you store your favorite program schedule in your browser – we don't see or collect that information from you;</li>
                         <li>To see some basic information about people visiting our site – it is described in detail in the next section.</li>
-                    </List>
+                    </ul>
                 </p>
                 <p>
                     The cookies we use allow us to see:
-                    <List>
+                    <ul>
                         <li>The Internet domain and Internet Protocol (IP) address from which you access our Website;</li>
                         <li>The type of Internet browser and the operating system of the computer you use to access our Website;</li>
                         <li>The date and time you visit our Website;</li>
@@ -45,7 +44,7 @@ export function CookieInfoPage() {
                         <li>The pages you shared on social media and to which social media network;</li>
                         <li>If you linked to our Website from another website, the address of that website; and</li>
                         <li>If you were referred to our Website from a search engine, the address of that website and the search term you used to find us.</li>
-                    </List>
+                    </ul>
                     Any data processing that occur while using cookies used for the sole purpose of carrying out the transmission of a communication and/or strictly necessary to perform the services you required is based on Article 6 (1) lit. b GDPR.
                 </p>
                 <p>

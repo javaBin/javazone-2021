@@ -2,7 +2,6 @@ import React from 'react';
 import { VikingBanner } from '../../components/PageBanner/PageBanner';
 import { Section } from '../../components/Section/Section';
 import { InlineLink } from '../../components/InlineLink/InlineLink';
-import { List } from '../../components/List/List';
 import {Figure} from "../../components/Figure/Figure";
 
 export function AboutUsPage() {
@@ -13,7 +12,7 @@ export function AboutUsPage() {
                 <p>
                     JavaZone is the biggest community-driven Java conference that has been organized in Oslo, Norway since 2001. It is organized on a voluntary basis by a group of people from <InlineLink color="green" external url="https://java.no">javaBin</InlineLink>, the Norwegian Java User Group, working around the year and putting many hours to create an amazing conference experience for you.
                 </p>
-                <p>    
+                <p>
                     Our goal is to organize a community-driven conference for developers where they can learn new things, share knowledge, and socialize.
                 </p>
                 <p>
@@ -27,13 +26,13 @@ export function AboutUsPage() {
                 </p>
                 <p>
                     The JavaZone Core Team for 2021:
-                    <List>
-                        <li><em>Leader</em> – <InlineLink color="green" url="javazone@java.no">javazone@java.no</InlineLink> – Anders Karlsen</li>
-                        <li><em>Program Committee</em> – <InlineLink color="green" url="program@java.no">program@java.no</InlineLink> – Jan Erik Robertsen</li>
-                        <li><em>Partners</em> – <InlineLink color="green" url="partner@java.no">partner@java.no</InlineLink> – Gareth Western</li>
-                        <li><em>Volunteers</em> – <InlineLink color="green" url="student@java.no">student@java.no</InlineLink> – Livar Bergheim</li>
-                    </List>
                 </p>
+                <ul>
+                    <li><em>Leader</em> – <InlineLink color="green" url="javazone@java.no">javazone@java.no</InlineLink> – Anders Karlsen</li>
+                    <li><em>Program Committee</em> – <InlineLink color="green" url="program@java.no">program@java.no</InlineLink> – Jan Erik Robertsen</li>
+                    <li><em>Partners</em> – <InlineLink color="green" url="partner@java.no">partner@java.no</InlineLink> – Gareth Western</li>
+                    <li><em>Volunteers</em> – <InlineLink color="green" url="student@java.no">student@java.no</InlineLink> – Livar Bergheim</li>
+                </ul>
                 <p>
                     Being the biggest community-driven conference would not have been easy without all the partners, event coordinators, and subcontractors, so we would like to thank them as well! Thank you, all!
                 </p>

@@ -4,7 +4,6 @@ import {CenterSection} from '../../components/CenterSection/CenterSection';
 import {Section} from '../../components/Section/Section';
 import {ImageSection} from '../../components/ImageSection/ImageSection';
 import {InlineLink} from '../../components/InlineLink/InlineLink';
-import {List} from '../../components/List/List';
 import {TicketPrice} from '../../components/TicketPrice/TicketPrice';
 import VideoSource from '../../components/Jumbotron/VideoSource';
 import {useCanPlayVideoType} from '../../core/hooks/UseCanPlayVideoType';
@@ -47,7 +46,7 @@ export function PartnersPage() {
                 <h1 className={styles.partnerHeader}>Partners</h1>
                 <div className={styles.partnersContainer}>
                 {partnerList.map(partner => {
-                    return <a className={styles.partnerBlock} href={partner.homepageUrl}>
+                    return <a key={partner.name} className={styles.partnerBlock} href={partner.homepageUrl}>
                         <img className={styles.logo} alt={partner.name} src={partner.logoUrl}/>
                     </a>
                 })}
@@ -77,37 +76,37 @@ export function PartnersPage() {
                     Even though all partners are considered equal, there are a few options to choose from. There is a base package that everyone gets, and then there are a few available expansions. Note that these expansions have limited availability.
                 </p>
                 <h2>Included in all partnerships</h2>
-                <List>
+                <ul>
                     <li>A 6-square meter stand space in the central arena at Oslo Spektrum with two side walls.</li>
                     <li>4 tickets to the conference for manning the stand.</li>
                     <li>Discounted participant tickets for your employees.</li>
                     <li>Branding on <InlineLink color="blue" external url="https://www.javazone.no">javazone.no</InlineLink>, at the venue, the program and in other promotional material that JavaZone produces.</li>
-                </List>
+                </ul>
                 <h2>Possible expansions</h2>
                 <h4>Extended Stand Space</h4>
-                <List>
+                <ul>
                     <li>Double the stand area to 12 square meters.</li>
                     <li>One long back wall. It is also possible to divide the area in two if you would prefer.</li>
-                </List>
+                </ul>
                 <h4>Restaurant Stand</h4>
-                <List>
+                <ul>
                     <li>A dedicated food stand serving food throughout the conference. The menu will be decided in collaboration between yourselves and our event partners.</li>
                     <li>Approx. 108 square meters (12 x 9).</li>
                     <li>4-meter high back wall.</li>
-                </List>
+                </ul>
                 <h4>Concept Stand</h4>
-                <List>
+                <ul>
                     <li>A large space for presenting your own 'concept'. This could be, for example, a gaming area, a coffee bar, or a chillout area.</li>
                     <li>Approx. 70 square meters (10 x 7).</li>
                     <li>4-meter high back wall.</li>
-                </List>
+                </ul>
                 <h4>Lounge Stand</h4>
-                <List>
+                <ul>
                     <li>A package at the same price as the "Standard package". The space given is bigger, but located in one of two areas outside the main hall.</li>
                     <li>Option 1: the west wing lounge, located just to the side of the main hall.</li>
                     <li>Option 2: in the outer ring of the Spektrum arena, located on the route between the presentation rooms and the main hall.</li>
                     <li>Optional backing wall to the area, or some freedom to design your own use of the space.</li>
-                </List>
+                </ul>
             </Section>
             <Figure name="ragnar"/>
             <CenterSection color="blue" header={<h1>Partnership prices</h1>}>
