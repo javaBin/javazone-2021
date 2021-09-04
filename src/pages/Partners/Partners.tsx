@@ -12,6 +12,7 @@ import {PartnerPrice, PartnerPriceList} from '../../components/PartnerPrices/Par
 import {Figure} from "../../components/Figure/Figure";
 import styles from './Partners.module.scss'
 import {partnerList} from "./PartnerList";
+import Box from "../../components/Box/Box";
 
 /* Randomize array in-place using Durstenfeld shuffle algorithm */
 function shuffleArray<T>(array: T[]) {
@@ -110,8 +111,13 @@ export function PartnersPage() {
             </Section>
             <Figure name="ragnar"/>
             <CenterSection color="blue" header={<h1>Partnership prices</h1>}>
-                <TicketPrice>78.000</TicketPrice>
-
+                <TicketPrice soldOut>78.000</TicketPrice>
+                <Box>
+                    <h2>Sold out!</h2>
+                    Our partner packages for 2021 are now sold out.
+                    But if you would like to join the waiting list and stay informed of any changes to the 2019
+                    partnership possibilities then please register your contact details and partnership preferences
+                </Box>
                 <p>
                     <i>Note that all 50+ partnerships for JavaZone 2019 were sold out long before the conference.</i>
                 </p>
