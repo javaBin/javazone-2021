@@ -114,7 +114,7 @@ export function PartnersPage() {
                 <Box>
                     <h2>Sold out!</h2>
                     Our partner packages for 2021 are now sold out.
-                    But if you would like to join the waiting list and stay informed of any changes to the 2019
+                    But if you would like to join the waiting list and stay informed of any changes to the 2021
                     partnership possibilities then please register your contact details and partnership preferences
                 </Box>
                 <p>
