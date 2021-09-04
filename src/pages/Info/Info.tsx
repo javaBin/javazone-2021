@@ -3,7 +3,6 @@ import { VikingBanner } from '../../components/PageBanner/PageBanner';
 import { Section } from '../../components/Section/Section';
 import { InlineLink } from '../../components/InlineLink/InlineLink';
 import { ImageSection } from '../../components/ImageSection/ImageSection';
-import Link from "../../components/Link/Link";
 import {Figure} from "../../components/Figure/Figure";
 
 export function InfoPage() {
@@ -26,7 +25,7 @@ export function InfoPage() {
                 <p>
                     We would not be what we are today without YOU! Thank you for your support and contributions over the years. Don’t procrastinate! Join your fellow Java developers at JavaZone in December!
                 </p>
-                <div><Link color="pink" url='/corona'>More information about JavaZone & COVID-19</Link></div>
+                <div><InlineLink color="pink" url='/corona'>More information about JavaZone & COVID-19</InlineLink></div>
             </Section>
             <Section color="pink" header={<h1>First thing first: Your ticket!</h1>}>
                 <p>
