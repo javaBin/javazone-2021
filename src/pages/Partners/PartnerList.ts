@@ -92,7 +92,7 @@ export const partnerList: Partner[] = [
     },
     {
         "homepageUrl": "https://schibsted.com/",
-        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/schibsted.svg",
+        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/schibsted.png",
         "name": "Schibsted"
     },
     {
