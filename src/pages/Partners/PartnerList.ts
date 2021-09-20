@@ -220,7 +220,7 @@ export const partnerList: Partner[] = [
         "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/capgemini.svg",
         "name": "Capgemini Norge AS"
     },
-        {
+    {
         "homepageUrl": "https://ciber.no",
         "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/capgemini.svg",
         "name": "Experis Ciber"
