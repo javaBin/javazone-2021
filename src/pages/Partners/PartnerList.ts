@@ -222,7 +222,7 @@ export const partnerList: Partner[] = [
     },
     {
         "homepageUrl": "https://ciber.no",
-        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/capgemini.svg",
+        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/ciber.svg",
         "name": "Experis Ciber"
     }
 ]
