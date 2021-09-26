@@ -28,16 +28,16 @@ export function AboutUsPage() {
                     The JavaZone Core Team for 2021:
                 </p>
                 <ul>
-                    <li><em>Leader</em> – <InlineLink color="green" url="javazone@java.no">javazone@java.no</InlineLink> – Anders Karlsen</li>
-                    <li><em>Program Committee</em> – <InlineLink color="green" url="program@java.no">program@java.no</InlineLink> – Jan Erik Robertsen</li>
-                    <li><em>Partners</em> – <InlineLink color="green" url="partner@java.no">partner@java.no</InlineLink> – Gareth Western</li>
-                    <li><em>Volunteers</em> – <InlineLink color="green" url="student@java.no">student@java.no</InlineLink> – Livar Bergheim</li>
+                    <li><em>Leader</em> – <InlineLink color="green" external url="mailto:javazone@java.no">javazone@java.no</InlineLink> – Anders Karlsen</li>
+                    <li><em>Program Committee</em> – <InlineLink color="green" external url="mailto:program@java.no">program@java.no</InlineLink> – Jan Erik Robertsen</li>
+                    <li><em>Partners</em> – <InlineLink color="green" external url="mailto:partner@java.no">partner@java.no</InlineLink> – Gareth Western</li>
+                    <li><em>Volunteers</em> – <InlineLink color="green" external url="mailto:student@java.no">student@java.no</InlineLink> – Livar Bergheim</li>
                 </ul>
                 <p>
                     Being the biggest community-driven conference would not have been easy without all the partners, event coordinators, and subcontractors, so we would like to thank them as well! Thank you, all!
                 </p>
                 <p>
-                    If you have any questions or comments, you can always reach the Core Team at <InlineLink color="green" url="mailto:javazone@java.no">javazone@java.no</InlineLink>.
+                    If you have any questions or comments, you can always reach the Core Team at <InlineLink color="green" external url="mailto:javazone@java.no">javazone@java.no</InlineLink>.
                 </p>
             </Section>
         </>

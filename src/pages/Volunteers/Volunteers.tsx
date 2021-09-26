@@ -105,6 +105,7 @@ export function VolunteersPage() {
                 <p>Hvis du skulle ha noen spørsmål som ikke er
                     besvart her, ta gjerne kontakt de frivilligansvarlige på<InlineLink
                         color="pink"
+                        external
                         url="mailto:student@java.no">student@java.no</InlineLink>!
                 </p>
             </Section>
