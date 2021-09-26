@@ -14,8 +14,8 @@ export function TicketsPage() {
             <VikingBanner header="The Ticket Booth" subHeader="Come join us in Oslo, in December 8-9th, 2021"/>
 
 
-            <CenterSection color="green" header={<h1>Get your tickets for JavaZone 2021 – Early Bird</h1>}>
-                <TicketPrice>7,290</TicketPrice>
+            <CenterSection color="green" header={<h1>Get your tickets for JavaZone 2021</h1>}>
+                <TicketPrice>7,890</TicketPrice>
             </CenterSection>
             <Section color="green" header={<h1>What's included?</h1>}>
                 <p>
