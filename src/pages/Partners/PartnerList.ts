@@ -181,11 +181,6 @@ export const partnerList: Partner[] = [
         "name": "Bouvet Norge AS"
     },
     {
-        "homepageUrl": "https://rejlers.no/",
-        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/reljers_embriq.svg",
-        "name": "Rejlers Embriq AS"
-    },
-    {
         "homepageUrl": "https://www.sonat.no/",
         "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/sonat.svg",
         "name": "Sonat Consulting Oslo"
