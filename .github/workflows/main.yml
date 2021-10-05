@@ -1,7 +1,11 @@
 name: CI
 
 on: [push, workflow_dispatch]
-
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'main'
 jobs:
   build:
     name: Deploy GitHub pages
