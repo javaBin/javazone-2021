@@ -6,7 +6,6 @@ import { Section } from '../../components/Section/Section';
 import { InlineLink } from '../../components/InlineLink/InlineLink';
 import {TicketPrice} from "../../components/TicketPrice/TicketPrice";
 import {Figure} from "../../components/Figure/Figure";
-import Link from "../../components/Link/Link";
 
 export function TicketsPage() {
     return (
@@ -14,8 +13,8 @@ export function TicketsPage() {
             <VikingBanner header="The Ticket Booth" subHeader="Come join us in Oslo, in December 8-9th, 2021"/>
 
 
-            <CenterSection color="green" header={<h1>Get your tickets for JavaZone 2021</h1>}>
-                <TicketPrice>7,890</TicketPrice>
+            <CenterSection color="green" header={<h1>AND WE'RE SOLD OUT!</h1>}>
+                <TicketPrice soldOut>7,890</TicketPrice>
             </CenterSection>
             <Section color="green" header={<h1>What's included?</h1>}>
                 <p>
@@ -26,10 +25,6 @@ export function TicketsPage() {
                     <br />
                     Prices are ex. VAt and ticket fee (NOK 120 per ticket)
                 </p>
-                <p>
-                    After July 1st, the ticket price will be NOK 7,890.00,- (Late Bird price).
-                </p>
-                <Link color="green" url="/tickets/buy">Get your tickets now!</Link>
             </Section>
             <ImageSection imageName="tickets_2" />
             <Section color="green" header={<h1>Working for one of our partners?</h1>}>
