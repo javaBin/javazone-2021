@@ -6,6 +6,7 @@ import { Section } from '../../components/Section/Section';
 import { InlineLink } from '../../components/InlineLink/InlineLink';
 import {TicketPrice} from "../../components/TicketPrice/TicketPrice";
 import {Figure} from "../../components/Figure/Figure";
+import Link from "../../components/Link/Link";
 
 export function TicketsPage() {
     return (
@@ -17,6 +18,7 @@ export function TicketsPage() {
                 <TicketPrice soldOut>7,890</TicketPrice>
             </CenterSection>
             <Section color="green" header={<h1>What's included?</h1>}>
+
                 <p>
                     The JavaZone Ticket includes full access to the conference and entry to workshops on Tuesday (limited seating: first come, first served).
                 </p>
@@ -25,6 +27,7 @@ export function TicketsPage() {
                     <br />
                     Prices are ex. VAt and ticket fee (NOK 120 per ticket)
                 </p>
+                <Link color="green" url="https://forms.gle/YD6eCAMcf6PKhqxM9" external>Add yourself to the waitlist</Link>
             </Section>
             <ImageSection imageName="tickets_2" />
             <Section color="green" header={<h1>Working for one of our partners?</h1>}>
