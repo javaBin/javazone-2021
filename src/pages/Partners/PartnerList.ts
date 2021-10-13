@@ -16,16 +16,6 @@ export const partnerList: Partner[] = [
         "name": "Systek"
     },
     {
-        "homepageUrl": "https://www.twilio.com//",
-        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2020/logos/twillo.png",
-        "name": "Twillo"
-    },
-    {
-        "homepageUrl": "https://tidal.com/",
-        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/tidal.svg",
-        "name": "TIDAL"
-    },
-    {
         "homepageUrl": "https://www.storebrand.no/",
         "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2020/logos/storebrand.png",
         "name": "Storebrand"
@@ -44,6 +34,11 @@ export const partnerList: Partner[] = [
         "homepageUrl": "https://techpros.no/new/",
         "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2020/logos/techpros-v2.png",
         "name": "TECHPROS"
+    },
+    {
+        "homepageUrl": "https://cognite.com",
+        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/cognite.svg",
+        "name": "Cognite"
     },
     {
         "homepageUrl": "https://www.knowit.no",
@@ -106,14 +101,19 @@ export const partnerList: Partner[] = [
         "name": "Visma Consulting"
     },
     {
+        "homepageUrl": "https://www.ambita.com/",
+        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/ambita.svg",
+        "name": "Ambita"
+    },
+    {
         "homepageUrl": "https://2park.no/",
         "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/2park.svg",
         "name": "2Park Technologes AS"
     },
     {
-        "homepageUrl": "https://www.evry.com/no/",
-        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/evry.svg",
-        "name": "EVRY Norge AS"
+        "homepageUrl": "https://www.tietoevry.com/no/",
+        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/tietoevry.svg",
+        "name": "TietoEVRY AS"
     },
     {
         "homepageUrl": "https://www.dips.com/no",
@@ -136,11 +136,6 @@ export const partnerList: Partner[] = [
         "name": "SpareBank 1 Banksamarbeidet"
     },
     {
-        "homepageUrl": "https://basefarm.no/",
-        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/basefarm.svg",
-        "name": "Basefarm AS"
-    },
-    {
         "homepageUrl": "https://www.vipps.no/",
         "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/vipps.svg",
         "name": "Vipps AS"
@@ -161,6 +156,11 @@ export const partnerList: Partner[] = [
         "name": "Scelto AS"
     },
     {
+        "homepageUrl": "https://www.tripletex.no/",
+        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/tripletex.svg",
+        "name": "Tripletex"
+    },
+    {
         "homepageUrl": "https://www.politiet.no/en/om/organisasjonen/andre/police-ict-services/",
         "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/politiet.svg",
         "name": "Politiets IKT-tjenester"
@@ -168,7 +168,7 @@ export const partnerList: Partner[] = [
     {
         "homepageUrl": "https://www.oslo.kommune.no/",
         "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/oslo_kommune.svg",
-        "name": "Oslo Kommune"
+        "name": "Oslo Origo"
     },
     {
         "homepageUrl": "https://www.webstep.no/",
@@ -196,6 +196,11 @@ export const partnerList: Partner[] = [
         "name": "Skatteetaten"
     },
     {
+        "homepageUrl": "https://www.toll.no/",
+        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/toll.svg",
+        "name": "Tolletaten"
+    },
+    {
         "homepageUrl": "https://microsoft.no/",
         "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/microsoft.svg",
         "name": "Microsoft"
@@ -204,6 +209,11 @@ export const partnerList: Partner[] = [
         "homepageUrl": "https://uptimeconsulting.no/",
         "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/uptime.svg",
         "name": "Uptime Consulting"
+    },
+    {
+        "homepageUrl": "https://cgi.com/",
+        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/cgi.svg",
+        "name": "CGI"
     },
     {
         "homepageUrl": "https://eika.no/",
@@ -221,8 +231,13 @@ export const partnerList: Partner[] = [
         "name": "Experis Ciber"
     },
     {
-        "homepageUrl": "https://embriq.no/",
+        "homepageUrl": "https://embriq.no",
         "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/embriq.svg",
         "name": "EmbriQ"
+    },
+    {
+        "homepageUrl": "https://bekk.no",
+        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/bekk.svg",
+        "name": "Bekk Consulting AS"
     }
 ]
