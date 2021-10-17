@@ -19,9 +19,12 @@ import {SpeakerTipsPage} from "./pages/Speakers/Tips";
 import {BuyTicketsPage} from "./pages/Tickets/BuyTicketsPage";
 import {CoronaPage} from "./pages/Corona/Corona";
 import {ProgramPage} from "./pages/Program/ProgramPage";
+import {WorkshopPage} from "./pages/Workshop/WorkshopPage";
 
 const routes: NavRoute[] = [
   {title: 'Info', url: '/info', show: true},
+  {title: 'Program', url: '/program', show: true},
+  {title: 'Workshops', url: '/workshops', show: true},
   {title: 'Tickets', url: '/tickets', show: true},
   {title: 'Tickets', url: '/tickets/buy', show: false},
   {title: 'Speakers', url: '/speakers', show: true},
@@ -56,6 +59,7 @@ function App() {
           <Route exact path="/" component={FrontPage} />
           <Route exact path="/info" component={InfoPage} />
           <Route exact path="/program" component={ProgramPage} />
+          <Route exact path="/workshops" component={WorkshopPage} />
           <Route exact path="/tickets" component={TicketsPage} />
           <Route exact path="/tickets/buy" component={BuyTicketsPage} />
           <Route exact path="/speakers" component={SpeakersPage} />
