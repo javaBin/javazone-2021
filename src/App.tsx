@@ -18,6 +18,7 @@ import {MonetaryPolicyPage} from "./pages/Speakers/MonetaryPolicy";
 import {SpeakerTipsPage} from "./pages/Speakers/Tips";
 import {BuyTicketsPage} from "./pages/Tickets/BuyTicketsPage";
 import {CoronaPage} from "./pages/Corona/Corona";
+import {ProgramPage} from "./pages/Program/ProgramPage";
 
 const routes: NavRoute[] = [
   {title: 'Info', url: '/info', show: true},
@@ -54,6 +55,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={FrontPage} />
           <Route exact path="/info" component={InfoPage} />
+          <Route exact path="/program" component={ProgramPage} />
           <Route exact path="/tickets" component={TicketsPage} />
           <Route exact path="/tickets/buy" component={BuyTicketsPage} />
           <Route exact path="/speakers" component={SpeakersPage} />
