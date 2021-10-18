@@ -18,9 +18,16 @@ import {MonetaryPolicyPage} from "./pages/Speakers/MonetaryPolicy";
 import {SpeakerTipsPage} from "./pages/Speakers/Tips";
 import {BuyTicketsPage} from "./pages/Tickets/BuyTicketsPage";
 import {CoronaPage} from "./pages/Corona/Corona";
+import {ProgramPage} from "./pages/Program/ProgramPage";
+import {WorkshopPage} from "./pages/Workshop/WorkshopPage";
+import {SessionPage} from "./pages/SessionPage/SessionPage";
 
 const routes: NavRoute[] = [
   {title: 'Info', url: '/info', show: true},
+  {title: 'Program', url: '/program', show: true},
+  {title: 'Program', url: '/program/:sessionId', show: false},
+  {title: 'Workshops', url: '/workshops', show: true},
+  {title: 'Workshops', url: '/workshops/:sessionId', show: false},
   {title: 'Tickets', url: '/tickets', show: true},
   {title: 'Tickets', url: '/tickets/buy', show: false},
   {title: 'Speakers', url: '/speakers', show: true},
@@ -54,6 +61,10 @@ function App() {
         <Switch>
           <Route exact path="/" component={FrontPage} />
           <Route exact path="/info" component={InfoPage} />
+          <Route exact path="/program" component={ProgramPage} />
+          <Route exact path="/program/:sessionId" component={SessionPage} />
+          <Route exact path="/workshops" component={WorkshopPage} />
+          <Route exact path="/workshops/:sessionId" component={SessionPage} />
           <Route exact path="/tickets" component={TicketsPage} />
           <Route exact path="/tickets/buy" component={BuyTicketsPage} />
           <Route exact path="/speakers" component={SpeakersPage} />

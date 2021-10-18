@@ -12,13 +12,10 @@ export function TicketsPage() {
     return (
         <>
             <VikingBanner header="The Ticket Booth" subHeader="Come join us in Oslo, in December 8-9th, 2021"/>
-
-
             <CenterSection color="green" header={<h1>AND WE'RE SOLD OUT!</h1>}>
                 <TicketPrice soldOut>7,890</TicketPrice>
             </CenterSection>
             <Section color="green" header={<h1>What's included?</h1>}>
-
                 <p>
                     The JavaZone Ticket includes full access to the conference and entry to workshops on Tuesday (limited seating: first come, first served).
                 </p>
