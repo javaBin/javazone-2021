@@ -7,7 +7,7 @@ export function ProgramPage(){
     return (
         <>
             <VikingBanner header="JavaZone Program 2021" subHeader="Find you favorite talks" />
-            <CenterSection color="blue" header={<h2>Time, Date and Room schedule will be availbe soon</h2>}>
+            <CenterSection color="blue" header={<h1>Time, Date and Room schedule will be availbe soon</h1>}>
                 <Program/>
             </CenterSection>
         </>

@@ -10,10 +10,21 @@
 }
 
 .program {
-  margin-bottom: 1rem;
+  display: block;
   text-align: start;
-}
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 1rem;
 
+
+  outline: none;
+  transition: .3s;
+
+  &:hover {
+    outline: solid white;
+    outline-offset: 0.5rem;
+  }
+}
 .session{
   display: flex;
   flex-direction: column;
