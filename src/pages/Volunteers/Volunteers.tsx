@@ -28,10 +28,11 @@ export function VolunteersPage() {
                 </p>
                 <p>
                     Perfekt! Du er akkurat den vi leter etter! <br/>
-                    Vi åpner for søknader oktober 2021. Du kan sette deg på vår e-postliste for å få beskjed når vi åpner.                    <br/>
+                    Søk som frivillig og bli med å hjelpe oss å lage tidenes beste JavaZone!<br/><br/>
                 </p>
                 <p>
-                    <Link color="pink" external url="http://eepurl.com/dt67aj">Meld deg på e-postlisten!</Link>
+                    <Link color="pink" external url="https://docs.google.com/forms/d/e/1FAIpQLSeowS7CcjSR1zPXrpGnAlqaJ7mKhC_tolIuP-nnG0gQMGgphg/viewform">Meld deg som frivillig!</Link>
+                    {/* <Link color="pink" external url="http://eepurl.com/dt67aj">Meld deg på e-postlisten!</Link> */}
                 </p>
             </Section>
             <Figure name="freya"/>
@@ -70,7 +71,7 @@ export function VolunteersPage() {
                 <p>
                     JavaZone dekker ikke reise eller overnatting for
                     frivillige. Men erfaringsmessig så er det mange studiesteder som velger å gi
-                    reisestøtte. Spør derfor instituttet/skolen din om dette.
+                    reisestøtte. Spør derfor studentforeningen eller instituttet ditt om dette.
                 </p>
             </Section>
             <Section color="pink" header={<h1>Får jeg bli med på AweZone?</h1>}>
@@ -84,14 +85,14 @@ export function VolunteersPage() {
                 <p>
                     Det er oppmøte i Oslo Spektrum kl. 19:00 tirsdag
                     7. desember for opplæring, noen oppgaver, mat og omvisning i lokalene. JavaZone er
-                    ferdig kl. 18 på torsdag 9. desember. Da rigger vi ned, og deretter går vi videre for
+                    ferdig kl. 18 på torsdag 9. desember. Da rigger vi ned i ca. 1 time, og deretter går vi videre for
                     mat og drikke. Vi spanderer :) Detaljer blir sendt ut til de som blir tatt opp som
                     frivillige.
                 </p>
             </Section>
             <Section color="pink" header={<h1>Når må jeg søke?</h1>}>
                 <p>
-                    Vi åpner for søknader til å bli frivillig i oktober, og søknadsfristen blir i november.
+                    Vi åpner for søknader til å bli frivillig i oktober, og søknadsfristen er 14. november.
                 </p>
             </Section>
             <Section color="pink" header={<h1>I don’t speak Norwegian… What about me?</h1>}>
@@ -111,7 +112,8 @@ export function VolunteersPage() {
             </Section>
             <Section color="pink" header={<h1>Bli med da vel!</h1>}>
                 <p>
-                    <Link color="pink" external url="http://eepurl.com/dt67aj">Meld deg på e-postlisten!</Link>
+                    <Link color="pink" external url="https://docs.google.com/forms/d/e/1FAIpQLSeowS7CcjSR1zPXrpGnAlqaJ7mKhC_tolIuP-nnG0gQMGgphg/viewform">Meld deg som frivillig!</Link>
+                    {/* <Link color="pink" external url="http://eepurl.com/dt67aj">Meld deg på e-postlisten!</Link> */}
                 </p>
             </Section>
         </>
