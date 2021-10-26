@@ -103,6 +103,11 @@ export function VolunteersPage() {
                     Instagram (kommer snart), 
                     LinkedIn (kommer snart).
                 </p>
+                <p>
+                    Plakat: 
+                        <InlineLink color="pink" external url='/jz21_frivillig_some.png'>liggende</InlineLink>, 
+                        <InlineLink color="pink" external url='/jz21_frivillig_A4.pdf'>stående (til utskrift)</InlineLink>
+                </p>
             </Section>            
             <Section color="pink" header={<h1>I don’t speak Norwegian… What about me?</h1>}>
                 <p>
