@@ -100,8 +100,7 @@ export function VolunteersPage() {
                     Lik og del gjerne en av våre poster i sosiale medier: 
                     <InlineLink color="pink" external url="https://www.facebook.com/javazoneconference/posts/10159489050841605">Facebook</InlineLink>, 
                     <InlineLink color="pink" external url="https://twitter.com/javazone/status/1452527596386848768">Twitter</InlineLink>, 
-                    Instagram (kommer snart), 
-                    LinkedIn (kommer snart).
+                    <InlineLink color="pink" external url="https://www.linkedin.com/feed/update/urn:li:activity:6859197928922198016">LinkedIn</InlineLink>.
                 </p>
                 <p>
                     Plakat: 
