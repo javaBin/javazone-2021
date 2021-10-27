@@ -226,9 +226,9 @@ export const partnerList: Partner[] = [
         "name": "Capgemini Norge AS"
     },
     {
-        "homepageUrl": "https://ciber.no",
-        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/ciber.svg",
-        "name": "Experis Ciber"
+        "homepageUrl": "https://experis.no",
+        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/experis.png",
+        "name": "Experis"
     },
     {
         "homepageUrl": "https://embriq.no",
@@ -239,5 +239,20 @@ export const partnerList: Partner[] = [
         "homepageUrl": "https://bekk.no",
         "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/bekk.svg",
         "name": "Bekk Consulting AS"
+    },
+    {
+        "homepageUrl": "https://cloudberries.no",
+        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/cloudberries.svg",
+        "name": "Cloudberries"
+    },
+    {
+        "homepageUrl": "https://ruter.no",
+        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/ruter.svg",
+        "name": "Ruter"
+    },
+    {
+        "homepageUrl": "https://mastercard.com",
+        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/mastercard.svg",
+        "name": "Mastercard Payment Services Norway AS"
     }
 ]
