@@ -24,15 +24,15 @@
     font-size: 1.4rem;
     font-weight: bold;
     border-radius: 3px;
-    border: 2px solid $color-logo-blue;
+    border: 2px solid white;
     background: none;
-    color: $color-logo-blue;
+    color: white;
     cursor: pointer;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     &.active {
-        color: white;
-        background: $color-logo-blue-dark;
+        color: black;
+        background: white;
     }
     @media only screen and (max-width: $screen-xxs) {
         display: grid;
@@ -43,9 +43,12 @@
 
 .buttonGroup button:not(:last-child) {
     border-right: none;
+    box-shadow: 0 0 0 0 white, 2px 0 0 0 white;
+
     @media only screen and (max-width: $screen-xxs) {
-        border-right: 2px solid $color-logo-blue;
+        border-right: 2px solid white;
         border-bottom: none;
+        box-shadow: none;
     }
 }
 
@@ -68,6 +71,6 @@
 }
 
 .buttonGroup > button:hover {
-    color: white;
-    background: $color-logo-blue-dark;
+    color: black;
+    background: white;
 }

@@ -3,10 +3,9 @@ import styles from './Workshop.module.scss'
 import {useFetch} from "../../core/hooks/UseFetch";
 import {ProgramData, SessionsData} from "../../core/models/Program.model";
 import {Link} from "react-router-dom";
-import {capitalizeFirstLetter} from "../../core/utils/util";
 
 function Session(props: SessionsData){
-    const lang = props.language == 'no' ? 'Norwegian' : 'English'
+    const lang = props.language === 'no' ? 'Norwegian' : 'English'
     return (
         <Link className={styles.program} to={`/workshops/${props.id}`}>
             <div className={styles.session}>
@@ -29,7 +28,7 @@ function Sessions(props: {data: [SessionsData]}){
         })
 
     return <> {
-        orderedSession.map(s => <Session {...s}/>)
+        orderedSession.map(s => <Session {...s} key={s.id}/>)
     } </>
 }
 

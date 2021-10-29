@@ -25,7 +25,7 @@ export function SessionPage() {
         return <VikingBanner header="404 session not found" subHeader="Where did it go (┛ಠ_ಠ)┛彡┻━┻"/>
     }
 
-    const lang = session.language == 'no' ? 'Norwegian' : 'English'
+    const lang = session.language === 'no' ? 'Norwegian' : 'English'
 
     return (
         <>
