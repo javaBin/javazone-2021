@@ -26,10 +26,10 @@ function Sessions(props: {data: [SessionsData]}){
     const sessions = props.data.filter(s => s.format === "workshop")
     const orderedSession = sessions.sort(
         (a,b) => {
-            if (a.length < b.length) {
-                return 1
+            if (a.startTime && b.startTime && a.startTime < b.startTime) {
+                return -1
             }
-            return -1
+            return 1
         })
 
     return <> {
