@@ -3,14 +3,18 @@ import styles from './Program.module.scss'
 import {useFetch} from "../../core/hooks/UseFetch";
 import {ProgramData, SessionsData} from "../../core/models/Program.model";
 import {Link} from "react-router-dom";
+import {capitalizeFirstLetter} from "../../core/utils/util";
 
 function Session(props: SessionsData){
+    const lang = props.language == 'no' ? 'Norwegian' : 'English'
+    const format = capitalizeFirstLetter(props.format)
+
     return (
         <Link className={styles.program} to={`/program/${props.id}`}>
             <div className={styles.session}>
                 <span className={styles.title}>{props.title}</span>
                 <span className={styles.speaker}>{props.speakers && props.speakers.map(speaker => speaker.name).join(", ")}</span>
-                <span className={styles.subinfo}>{`${props.format}, ${props.length} min`}</span>
+                <span className={styles.subinfo}>{`${format}, ${lang}, ${props.length} min`}</span>
             </div>
         </Link>
     )

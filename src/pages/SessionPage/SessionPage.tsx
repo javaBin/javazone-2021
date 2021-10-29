@@ -25,6 +25,8 @@ export function SessionPage() {
         return <VikingBanner header="404 session not found" subHeader="Where did it go (┛ಠ_ಠ)┛彡┻━┻"/>
     }
 
+    const lang = session.language == 'no' ? 'Norwegian' : 'English'
+
     return (
         <>
             <VikingBanner header={session.title} subHeader={session.speakers.map(speaker => speaker.name).join(", ")}/>
@@ -42,10 +44,14 @@ export function SessionPage() {
                     })
                 }
             </>
-
             <Section color={color} header={<h1>Intended audience</h1>}>
                 <p className={styles.preLine}>
                     {session.intendedAudience}
+                </p>
+            </Section>
+            <Section color={color} header={<h1>Language</h1>}>
+                <p className={styles.preLine}>
+                    {lang}
                 </p>
             </Section>
         </>
