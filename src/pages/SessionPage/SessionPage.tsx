@@ -6,6 +6,8 @@ import {ProgramData} from "../../core/models/Program.model";
 import {useParams} from "react-router";
 import {Section} from "../../components/Section/Section";
 import styles from './Session.module.scss'
+import {parseISO} from "date-fns";
+import {getDayAndTime} from "../../core/utils/util";
 
 const colors: ColorChoices[] = ['pink', 'blue', 'green']
 export type ColorChoices = 'pink' | 'blue' | 'green';
@@ -25,7 +27,10 @@ export function SessionPage() {
         return <VikingBanner header="404 session not found" subHeader="Where did it go (┛ಠ_ಠ)┛彡┻━┻"/>
     }
 
-    const lang = session.language == 'no' ? 'Norwegian' : 'English'
+    const lang = session.language === 'no' ? 'Norwegian' : 'English'
+    const date = session.startTime && parseISO(session.startTime)
+    const dateAndTime = date && getDayAndTime(date)
+
 
     return (
         <>
@@ -35,6 +40,13 @@ export function SessionPage() {
                     {session.abstract}
                 </p>
             </CenterSection>
+            {
+                dateAndTime && <Section color={color} header={<h1>Day & time</h1>}>
+                    <p className={styles.preLine}>
+                        {dateAndTime} - {session.length} min
+                    </p>
+                </Section>
+            }
             <>
                 {
                     session.speakers.map(speaker => {

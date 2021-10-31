@@ -1,7 +1,7 @@
 import {VikingBanner} from "../../components/PageBanner/PageBanner";
-import {CenterSection} from "../../components/CenterSection/CenterSection";
 import React from "react";
 import {Program} from "./Program";
+import {CenterSection} from "../../components/CenterSection/CenterSection";
 
 export function ProgramPage(){
     return (
