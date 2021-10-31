@@ -3,6 +3,7 @@ import styles from './Button.module.scss';
 
 export interface ActiveButton {
     name: string;
+    value: string
     key: number;
 }
 
@@ -16,7 +17,7 @@ export function ButtonGroup(props: ButtonGroupProps) {
     const [activeButton, setActiveButton] = useState<ActiveButton | undefined>();
 
     function handleClick(child: ReactElement<any>, key: number) {
-        const activeButton = {name: child.props.children, key};
+        const activeButton = {name: child.props.children, value: child.props.value, key};
         setActiveButton(activeButton);
         props.activeButton(activeButton);
     }
