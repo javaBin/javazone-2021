@@ -7,21 +7,28 @@
   width: 100%;
   padding: 2rem;
   height: auto;
+
+  @media only screen and (max-width: $screen-xxs) {
+    padding: 10px;
+  }
 }
 
-.filterContainer{
+.filterContainer {
   padding-top: 0.5rem;
   text-align: start;
+  @media only screen and (max-width: $screen-xxs) {
+    padding: 0.5rem;
+  }
 }
 
-.filterSubContainer{
+.filterSubContainer {
   display: flex;
   @media only screen and (max-width: $screen-lg) {
     display: block;
   }
 }
 
-.filterHeader{
+.filterHeader {
   font-size: 1.4rem;
   font-weight: bold;
   color: white;
@@ -29,12 +36,11 @@
 }
 
 .program {
-  display: block;
+  display: flex;
   text-align: start;
-  text-decoration: none;
-  color: inherit;
   margin-bottom: 1rem;
-
+  align-items: center;
+  justify-content: center;
 
   outline: none;
   transition: .3s;
@@ -45,9 +51,24 @@
   }
 }
 
-.session{
+.session {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  width: 93%;
+  overflow-wrap: break-word;
+}
+
+.favButton {
+  width: 7%;
+  margin: 0 auto;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0px;
+  font: inherit;
+  cursor: pointer;
 }
 
 .title {
@@ -59,10 +80,10 @@
   font-size: 1.3rem;
 }
 
-.subinfo{
+.subinfo {
   font-size: 1rem;
 }
 
-.dayFilter{
- padding-right: 20px;
+.dayFilter {
+  padding-right: 20px;
 }
