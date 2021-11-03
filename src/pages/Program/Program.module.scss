@@ -56,12 +56,12 @@
   flex-direction: column;
   text-decoration: none;
   color: inherit;
-  width: 93%;
+  width: calc(100% - 32px);
   overflow-wrap: break-word;
 }
 
 .favButton {
-  width: 7%;
+  width: 32px;
   margin: 0 auto;
   background: none;
   color: inherit;
