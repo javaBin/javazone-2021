@@ -3,12 +3,13 @@ import { Link as RouterLink } from 'react-router-dom';
 import styles from './Link.module.scss';
 import classNames from "classnames";
 
-export type ColorChoices = 'pink' | 'blue' | 'green';
+export type ColorChoices = 'pink' | 'blue' | 'green' | 'white';
 
 const colorCls = {
     'pink': styles.colorPink,
     'blue': styles.colorBlue,
     'green': styles.colorGreen,
+    'white': styles.colorWhite,
 }
 
 function getColorCls(color?: ColorChoices) {
@@ -18,6 +19,7 @@ function getColorCls(color?: ColorChoices) {
 }
 
 interface LinkProps {
+    classNames?: string;
     url: string;
     children: React.ReactNode;
     external?: boolean;
@@ -27,7 +29,7 @@ interface LinkProps {
 }
 
 function Link(props: LinkProps) {
-    const cls = classNames(styles.link, getColorCls(props.color))
+    const cls = classNames(styles.link, getColorCls(props.color), props.classNames)
     return (
         props.external 
             ?   <a href={props.url} className={cls} rel="noreferrer" target={props.noBlankTarget ? '' : '_blank'}>

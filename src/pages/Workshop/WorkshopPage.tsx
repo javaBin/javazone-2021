@@ -7,7 +7,7 @@ export function WorkshopPage(){
     return (
         <>
             <VikingBanner header="JavaZone Workshops 2021" subHeader="Find you workshop" />
-            <CenterSection color="blue" header={<h1>Registrations for workshops will open 15. november at 12:00</h1>}>
+            <CenterSection color="blue" header={<h1>Workshops registrations opens 15. november at 12:00</h1>}>
                 <Workshop/>
             </CenterSection>
         </>

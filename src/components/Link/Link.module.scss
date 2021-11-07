@@ -5,6 +5,8 @@
     color: $color-logo-pink;
     &:hover {
         background: $color-logo-pink-dark;
+        text-decoration: none;
+        color: white;
     }
 }
 
@@ -13,6 +15,8 @@
     color: $color-logo-blue;
     &:hover {
         background: $color-logo-blue-dark;
+        text-decoration: none;
+        color: white;
     }
 }
 
@@ -21,6 +25,18 @@
     color: $color-logo-green;
     &:hover {
         background: $color-logo-green-dark;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.colorWhite{
+    border: 2px solid white;
+    color: white;
+    &:hover {
+        text-decoration: none;
+        background: white;
+        color: black
     }
 }
 
@@ -36,9 +52,4 @@
     text-align: center;
     cursor: pointer;
     text-decoration: none; 
-
-    &:hover {
-        text-decoration: none; 
-        color: white;
-    }
 }

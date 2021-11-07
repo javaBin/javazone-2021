@@ -9,6 +9,16 @@
   height: auto;
 }
 
+.programContainer {
+  display: flex;
+  align-items: center;
+  @media only screen and (max-width: $screen-sm) {
+    display: block;
+    text-align: start;
+    padding-bottom: 2rem;
+  }
+}
+
 .program {
   display: block;
   text-align: start;
@@ -24,7 +34,25 @@
     outline: solid white;
     outline-offset: 0.5rem;
   }
+
+  width: calc(100% - 160px);
+
+  @media only screen and (max-width: $screen-sm) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
 }
+
+.registrationLink{
+  width: 180px;
+  height: fit-content;
+  margin-left: 20px;
+  @media only screen and (max-width: $screen-sm) {
+    margin-left: 0;
+  }
+}
+
 .session{
   display: flex;
   flex-direction: column;

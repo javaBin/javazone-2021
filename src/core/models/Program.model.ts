@@ -16,6 +16,7 @@ export interface SessionsData{
     speakers: [SpeakerData]
     intendedAudience: string
     video?: string
+    registerLoc?: string
 }
 
 export interface ProgramData {

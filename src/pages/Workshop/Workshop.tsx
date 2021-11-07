@@ -3,6 +3,7 @@ import styles from './Workshop.module.scss'
 import {useFetch} from "../../core/hooks/UseFetch";
 import {ProgramData, SessionsData} from "../../core/models/Program.model";
 import {Link} from "react-router-dom";
+import ComponentLink from "../../components/Link/Link";
 import {parseISO} from "date-fns";
 import {getDayAndTime} from "../../core/utils/util";
 
@@ -12,6 +13,7 @@ function Session(props: SessionsData){
     const dateAndTime = !!date ? getDayAndTime(date) + ',' : ''
 
     return (
+        <div className={styles.programContainer}>
         <Link className={styles.program} to={`/workshops/${props.id}`}>
             <div className={styles.session}>
                 <span className={styles.title}>{props.title}</span>
@@ -19,6 +21,8 @@ function Session(props: SessionsData){
                 <span className={styles.subinfo}>{`${lang}, ${dateAndTime} ${props.length} min`}</span>
             </div>
         </Link>
+        {props.registerLoc && <ComponentLink classNames={styles.registrationLink} external url={props.registerLoc!!} color="white">Registration</ComponentLink>}
+        </div>
     )
 }
 

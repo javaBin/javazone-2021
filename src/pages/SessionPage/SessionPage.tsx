@@ -8,6 +8,7 @@ import {Section} from "../../components/Section/Section";
 import styles from './Session.module.scss'
 import {parseISO} from "date-fns";
 import {getDayAndTime} from "../../core/utils/util";
+import Link from "../../components/Link/Link";
 
 const colors: ColorChoices[] = ['pink', 'blue', 'green']
 export type ColorChoices = 'pink' | 'blue' | 'green';
@@ -66,6 +67,10 @@ export function SessionPage() {
                     {lang}
                 </p>
             </Section>
+            {session.registerLoc && <Section color={color} header={<h1>Registration</h1>}>
+                <div className={styles.registrationLink}/>
+                <Link external url={session.registerLoc} color={color}>Registration</Link>
+            </Section>}
         </>
     )
 }
