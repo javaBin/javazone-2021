@@ -3,67 +3,117 @@ import styles from './Program.module.scss'
 import {useFetch} from "../../core/hooks/UseFetch";
 import {ProgramData, SessionsData} from "../../core/models/Program.model";
 import {Link} from "react-router-dom";
-import {capitalizeFirstLetter} from "../../core/utils/util";
+import {capitalizeFirstLetter, getDayAndTime, partition} from "../../core/utils/util";
 import {ButtonGroup} from "../../components/Button/ButtonGroup";
 import {CheckCircle, Circle} from "react-feather";
 import {useLocalStorage} from "../../core/hooks/UseLocalStorage";
+import {parseISO} from "date-fns";
 
-const dayFeature = false
-
-function Session(props: { session: SessionsData, isFavorite: boolean, setFavorites: () => void }) {
-    const lang = props.session.language === 'no' ? 'Norwegian' : 'English'
-    const format = capitalizeFirstLetter(props.session.format)
+function Session(props: { session: SessionsData, setFavorites: () => void }) {
+    const {speakers, format, length, id, title, startTime, language, favorite} = props.session;
+    const lang = language === 'no' ? 'Norwegian' : 'English'
+    const capFormat = capitalizeFirstLetter(format)
+    const date = startTime && parseISO(startTime)
+    const dateAndTime = !!date ? getDayAndTime(date) + ',' : ''
 
     return (
         <div className={styles.program}>
-            <Link className={styles.session} to={`/program/${props.session.id}`}>
-                <span className={styles.title}>{props.session.title}</span>
+            <Link className={styles.session} to={`/program/${id}`}>
+                <span className={styles.title}>{title}</span>
                 <span className={styles.speaker}>
-                    {props.session.speakers && props.session.speakers.map(speaker => speaker.name).join(", ")}
+                    {speakers && speakers.map(speaker => speaker.name).join(", ")}
                 </span>
-                <span className={styles.subinfo}>{`${format}, ${lang}, ${props.session.length} min`}</span>
+                <span className={styles.subinfo}>{`${capFormat}, ${lang}, ${dateAndTime} ${length} min`}</span>
             </Link>
             <button aria-label="Add to favorites"
                     className={styles.favButton}
                     onClick={() => props.setFavorites()}>
-                {props.isFavorite ? <CheckCircle size={32}/> : <Circle size={32}/>}
+                {!!favorite ? <CheckCircle size={32}/> : <Circle size={32}/>}
             </button>
         </div>
     )
+}
+
+const times = [
+    '09:00',
+    '10:20',
+    '11:40',
+    '13:00',
+    '14:20',
+    '15:40',
+    '17:00',
+    '18:20',
+]
+
+// const days = ['2021-12-08', '2021-12-09']
+const wednesday = '2021-12-08'
+//const thursday = '2021-12-09'
+
+function TimeSlots(props: { sessions: SessionsData[], favorites: string[], setFavorites: (value: string[]) => void }) {
+    const {sessions, favorites, setFavorites} = props;
+    return <> {
+        times.map((start, index) => {
+            const end: string | undefined = times[index + 1]
+            const timeSessions = sessions.filter(session => {
+                const time = session.startTime.substring(11)
+                return time >= start && (end === undefined || time < end)
+            })
+
+            if (timeSessions.length === 0) return null;
+
+            return <React.Fragment key={start}>
+                <h3 className={styles.time}>{start}</h3>
+                {
+                    timeSessions.map(s => {
+                        const fun = () => s.favorite ? favorites.filter(id => id !== s.id) : [...favorites, s.id]
+                        return <Session key={s.id}
+                                        session={s}
+                                        setFavorites={() => setFavorites(fun())}/>
+                    })
+                }
+            </React.Fragment>
+
+        })
+    }
+    </>
+
 }
 
 function Sessions(props: { sessions: SessionsData[], favorites: string[], setFavorites: (value: string[]) => void }) {
     const {sessions, favorites, setFavorites} = props;
     const orderedSession = sessions.sort(
         (a, b) => {
-            if (a.length < b.length) {
+            if (a.startTime >= b.startTime) {
                 return 1
             }
             return -1
         })
 
-    return <> {
-        orderedSession.map(s => {
-            const isFavorite = favorites.includes(s.id)
-            const fun = () => isFavorite ? favorites.filter(id => id !== s.id) : [...favorites, s.id]
-            return <Session key={s.id}
-                            session={s}
-                            isFavorite={props.favorites.includes(s.id)}
-                            setFavorites={() => setFavorites(fun())}/>
-        })
-    }</>
+    const [wednesdaySessions, thursdaySessions] = partition(orderedSession, s => s.startTime.startsWith(wednesday))
+
+    return <>
+        {
+            wednesdaySessions.length !== 0 && <>
+                <h2 className={styles.day}>Wednesday</h2>
+                <TimeSlots sessions={wednesdaySessions} favorites={favorites} setFavorites={setFavorites}/>
+            </>
+        }
+        {
+            thursdaySessions.length !== 0 && <>
+                <h2 className={styles.day}>Thursday</h2>
+                <TimeSlots sessions={thursdaySessions} favorites={favorites} setFavorites={setFavorites}/>
+            </>
+        }
+    </>
 }
 
-function DayFilter(props: {}) {
-    if (!dayFeature) {
-        return null
-    }
-
+function DayFilter(props: { setFilter: (name: string) => void }) {
     return <div className={styles.dayFilter}>
         <div className={styles.filterHeader}>Day</div>
-        <ButtonGroup activeButton={() => {}}>
-            <button>Wednesday</button>
-            <button>Thursday</button>
+        <ButtonGroup defaultButton={0} activeButton={button => props.setFilter(button.value)}>
+            <button>Both</button>
+            <button value="2021-12-08">Wednesday</button>
+            <button value="2021-12-09">Thursday</button>
         </ButtonGroup>
     </div>
 }
@@ -104,12 +154,15 @@ export function Program() {
     const [favorites, setFavorites] = useLocalStorage<string[]>('fav', [])
 
     const sessions = data && data.sessions.filter(s => s.format !== "workshop")
+    sessions?.forEach(s => s.favorite = favorites.includes(s.id))
 
     const [languageFilter, setLanguageFilter] = useState<string | undefined>(undefined)
+    const [dayfilter, setDayFilter] = useState<string | undefined>(undefined)
     const [formatFilter, setFormatFilter] = useState<string | undefined>(undefined)
 
     const filteredSession = sessions
         ?.filter(s => !!languageFilter ? s.language === languageFilter : true)
+        ?.filter(s => !!dayfilter ? s.startTime.startsWith(dayfilter) : true)
 
     const formatFilteredSession = filteredSession
         ?.filter(s => !!formatFilter && formatFilter !== 'favorites' ? s.format === formatFilter : true)
@@ -121,15 +174,15 @@ export function Program() {
     return <div>
         <div className={`${styles.container} ${styles.filterContainer}`}>
             <div className={styles.filterSubContainer}>
-                <DayFilter/>
+                <DayFilter setFilter={setDayFilter}/>
                 <LanguageFilter setFilter={setLanguageFilter}/>
             </div>
             <FormatFilter setFilter={setFormatFilter} sessions={filteredSession} favorites={filteredFavorites}/>
         </div>
         <div className={styles.container}>
             {!!formatFilteredSession && <Sessions sessions={formatFilteredSession}
-                                            favorites={favorites}
-                                            setFavorites={setFavorites}/>}
+                                                  favorites={favorites}
+                                                  setFavorites={setFavorites}/>}
         </div>
     </div>
 }
