@@ -86,7 +86,7 @@ function Sessions(props: { sessions: SessionsData[], favorites: string[], setFav
         (a, b) => {
             if (a.startSlot > b.startSlot) {
                 return 1
-            } else if (a.startSlot == b.startSlot){
+            } else if (a.startSlot === b.startSlot){
                 if (a.room && b.room && a.room > b.room){
                     return 1
                 }
