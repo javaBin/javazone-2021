@@ -10,11 +10,12 @@ import {useLocalStorage} from "../../core/hooks/UseLocalStorage";
 import {parseISO} from "date-fns";
 
 function Session(props: { session: SessionsData, setFavorites: () => void }) {
-    const {speakers, format, length, id, title, startTime, language, favorite} = props.session;
+    const {speakers, format, length, id, title, startTime, language, favorite, room} = props.session;
     const lang = language === 'no' ? 'Norwegian' : 'English'
     const capFormat = capitalizeFirstLetter(format)
     const date = startTime && parseISO(startTime)
     const dateAndTime = !!date ? getDayAndTime(date) + ',' : ''
+    const roomFormat = !!room ? ', ' + room : ''
 
     return (
         <div className={styles.program}>
@@ -23,7 +24,7 @@ function Session(props: { session: SessionsData, setFavorites: () => void }) {
                 <span className={styles.speaker}>
                     {speakers && speakers.map(speaker => speaker.name).join(", ")}
                 </span>
-                <span className={styles.subinfo}>{`${capFormat}, ${lang}, ${dateAndTime} ${length} min`}</span>
+                <span className={styles.subinfo}>{`${capFormat}, ${lang}, ${dateAndTime} ${length} min${roomFormat}`}</span>
             </Link>
             <button aria-label="Add to favorites"
                     className={styles.favButton}
@@ -83,8 +84,17 @@ function Sessions(props: { sessions: SessionsData[], favorites: string[], setFav
     const {sessions, favorites, setFavorites} = props;
     const orderedSession = sessions.sort(
         (a, b) => {
-            if (a.startTime >= b.startTime) {
+            if (a.startSlot > b.startSlot) {
                 return 1
+            } else if (a.startSlot == b.startSlot){
+                if (a.room && b.room && a.room > b.room){
+                    return 1
+                }
+                else if (a.room && b.room && a.room === b.room){
+                    if(a.startTime >= b.startTime) {
+                        return 1
+                    }
+                }
             }
             return -1
         })

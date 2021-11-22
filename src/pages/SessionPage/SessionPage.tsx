@@ -48,6 +48,13 @@ export function SessionPage() {
                     </p>
                 </Section>
             }
+            {
+                session.room && <Section color={color} header={<h1>Room</h1>}>
+                    <p className={styles.preLine}>
+                        {session.room}
+                    </p>
+                </Section>
+            }
             <>
                 {
                     session.speakers.map(speaker => {

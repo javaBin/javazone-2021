@@ -101,16 +101,6 @@ export const partnerList: Partner[] = [
         "name": "Visma Consulting"
     },
     {
-        "homepageUrl": "https://www.ambita.com/",
-        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/ambita.svg",
-        "name": "Ambita"
-    },
-    {
-        "homepageUrl": "https://2park.no/",
-        "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/2park.svg",
-        "name": "2Park Technologes AS"
-    },
-    {
         "homepageUrl": "https://www.tietoevry.com/no/",
         "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/tietoevry.svg",
         "name": "TietoEVRY AS"

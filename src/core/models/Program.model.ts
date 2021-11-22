@@ -11,6 +11,7 @@ export interface SessionsData{
     format: string
     language: string
     startTime: string
+    startSlot: string
     length: string
     room?: string
     speakers: [SpeakerData]
