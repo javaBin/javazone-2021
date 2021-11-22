@@ -10,13 +10,14 @@ export interface SessionsData{
     abstract: string
     format: string
     language: string
-    startTime?: string
+    startTime: string
     length: string
     room?: string
     speakers: [SpeakerData]
     intendedAudience: string
     video?: string
     registerLoc?: string
+    favorite?: boolean
 }
 
 export interface ProgramData {

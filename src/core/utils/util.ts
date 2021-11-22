@@ -21,3 +21,10 @@ export function getDayAndTime(date: Date): string {
     const day = getDay(date)
     return `${getDayAsString(day)} ${format(date, 'H:mm')}`
 }
+
+
+export function partition<T>(array: T[], filter: (t :T) => boolean) {
+    const left: T[] = [], right: T[] = [];
+    array.forEach((e) => (filter(e) ? left : right).push(e));
+    return [left, right];
+}
