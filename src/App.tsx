@@ -21,6 +21,7 @@ import {CoronaPage} from "./pages/Corona/Corona";
 import {ProgramPage} from "./pages/Program/ProgramPage";
 import {WorkshopPage} from "./pages/Workshop/WorkshopPage";
 import {SessionPage} from "./pages/SessionPage/SessionPage";
+import {FoodPage} from "./pages/Food/Food";
 
 const routes: NavRoute[] = [
   {title: 'Info', url: '/info', show: true},
@@ -37,6 +38,7 @@ const routes: NavRoute[] = [
   {title: 'About', url: '/about', show: true},
   {title: 'Cookies', url: '/privacy-cookies', show: false},
   {title: 'Corona', url: '/corona', show: false},
+  {title: 'Food menu', url: '/food', show: false},
   {title: 'Tips for Speakers', url: '/speakers/tips', show: false},
   {title: 'Monetary Policy', url: '/speakers/monetary-policy', show: false},
 ];
@@ -75,6 +77,7 @@ function App() {
           <Route exact path="/volunteers" component={VolunteersPage} />
           <Route exact path="/privacy-cookies" component={CookieInfoPage} />
           <Route exact path="/corona" component={CoronaPage} />
+          <Route exact path="/food" component={FoodPage} />
           <Route component={NotFoundPage} />
         </Switch>
         <Footer routes={routes} />
