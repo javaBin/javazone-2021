@@ -28,7 +28,7 @@ export function CoronaPage() {
             </Section>
             <Section color="pink" header={<h1>Hand sanitizer</h1>}>
                 <p>
-                    There will be multiple hand s stations positioned around the Spektrum. Please make frequent use of
+                    There will be multiple hand stations positioned around the Spektrum. Please make frequent use of
                     these.
                 </p>
             </Section>
