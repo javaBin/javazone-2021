@@ -38,8 +38,10 @@ export function CoronaPage() {
                     encourage you to do the same.
                 </p>
                 <p>
-                    If experience even minor symptoms or has been in close contact with an infected person, then we
-                    encourage you stay home.
+                    <b>
+                        If experience even minor symptoms or has been in close contact with an infected person, then we
+                        encourage you stay home.
+                    </b>
                 </p>
             </Section>
         </>
