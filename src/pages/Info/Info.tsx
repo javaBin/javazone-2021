@@ -4,14 +4,13 @@ import { Section } from '../../components/Section/Section';
 import { InlineLink } from '../../components/InlineLink/InlineLink';
 import { ImageSection } from '../../components/ImageSection/ImageSection';
 import {Figure} from "../../components/Figure/Figure";
-import Link from "../../components/Link/Link";
 
 export function InfoPage() {
     return (
         <>
             <VikingBanner header="Another year, another JavaZone!" subHeader="December 8-9th"/>
             <Section color="pink" header={<h1>JavaZone 101 the who, what and where</h1>}>
-                <p><Link color="pink" url='/corona'>More information about JavaZone & COVID-19</Link></p>
+                <p><InlineLink color="pink" url='/corona'>More information about JavaZone & COVID-19</InlineLink></p>
                 <p>
                     JavaZone – the biggest European community-driven conference for modern developers will be 20 years old in 2021! Don’t miss out on two days of inspiring tech talks, a day of hands-on sessions, mingling, and a great party!
                 </p>

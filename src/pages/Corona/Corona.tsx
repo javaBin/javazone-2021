@@ -1,6 +1,7 @@
 import React from 'react';
 import {VikingBanner} from '../../components/PageBanner/PageBanner';
 import {Section} from '../../components/Section/Section';
+import {InlineLink} from "../../components/InlineLink/InlineLink";
 
 export function CoronaPage() {
     return (
@@ -8,40 +9,43 @@ export function CoronaPage() {
             <VikingBanner header="Information regarding Covid-19" subHeader=""/>
             <Section color="pink" header={<h1>Information</h1>}>
                 <p>
-                    Following the latest updates from the government and the local authorities
-                    it will be possible for the conference to proceed as planned.
-                    Here are some important details about the conference to help ensure an enjoyable and safe experience
-                    for all participants.
-                </p>
-            </Section>
-            <Section color="pink" header={<h1>Capacity Planning</h1>}>
-                <p>
-                    2021 will (as is to be expected) not be setting any records for maximum attendance. We have
-                    deliberately reduced the total number of tickets over previous years to ensure that there is greater
-                    free space and less crowding inside Spektrum.
-                </p>
-            </Section>
-            <Section color="pink" header={<h1>Face Masks</h1>}>
-                <p>We strongly recommend the use of a facemask for the duration of the conference. Extra facemasks will
-                    be freely available for all participants throughout the event.
-                </p>
-            </Section>
-            <Section color="pink" header={<h1>Hand sanitizer</h1>}>
-                <p>
-                    There will be multiple hand stations positioned around the Spektrum. Please make frequent use of
-                    these.
-                </p>
-            </Section>
-            <Section color="pink" header={<h1>Self Testing</h1>}>
-                <p>
-                    All our crew and personnel from our event partner will be self-tested prior to the event. We
-                    encourage you to do the same.
-                </p>
-                <p>
-                    <b>
-                        If experience even minor symptoms or has been in close contact with an infected person, then we
-                        encourage you stay home.
-                    </b>
+                    <p>
+                        Following the latest updates from the government and the local authorities regarding the Omicron
+                        variant of COVID-19 it’s no longer possible to carry out the conference as planned in Oslo
+                        Spektrum. Unfortunately, with only a few days remaining, we have already committed and completed
+                        many of the preparations.
+                    </p>
+
+                    <p>
+                        This means there will be no physical event in Oslo Spektrum on December 7th to 9th, but we are
+                        currently looking into what is feasible as an alternative solution.
+                    </p>
+
+                    <p>
+                        We will continuously update this page with new information.
+                    </p>
+
+                    <p>
+                        Official information from the government:
+                    </p>
+                    <p>
+                        <InlineLink
+                            url={"https://www.regjeringen.no/en/aktuelt/measures-are-being-introduced-to-delay-the-spread-of-the-omicron-variant-in-norway/id2890028/"}
+                            color="pink"
+                            external>
+                            https://www.regjeringen.no/en/aktuelt/measures-are-being-introduced-to-delay-the-spread-of-the-omicron-variant-in-norway/id2890028/
+                        </InlineLink>
+                    </p>
+                    <p>
+                        <InlineLink url={"https://www.oslo.kommune.no/english/coronavirus/rules-and-advice/"}
+                                    color="pink"
+                                    external>
+                            https://www.oslo.kommune.no/english/coronavirus/rules-and-advice/
+                        </InlineLink>
+                    </p>
+
+                    <p>Last updated Oslo, 02.12.2021</p>
+
                 </p>
             </Section>
         </>
