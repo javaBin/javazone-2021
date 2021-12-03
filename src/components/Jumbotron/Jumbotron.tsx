@@ -37,7 +37,7 @@ export function Jumbotron(props: JumbotronProps) {
                     <h3 className={styles.subsubTitle}>{props.subsubTitle}</h3>
                     <p>Following the latest updates from the government and
                         the local authorities regarding the Omicron variant of COVID-19 it’s no longer possible to carry out the conference as planned in Oslo Spektrum.</p>
-                    <p>We're looking at alternatives.</p>
+                    <p>Read more about the changes here.</p>
                     <Link classNames={styles.covidLink} color="pink" url="/corona">JavaZone & Corona</Link>
                 </div>
             </div>
