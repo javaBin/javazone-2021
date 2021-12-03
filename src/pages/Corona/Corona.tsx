@@ -1,7 +1,6 @@
 import React from 'react';
 import {VikingBanner} from '../../components/PageBanner/PageBanner';
 import {Section} from '../../components/Section/Section';
-import {InlineLink} from "../../components/InlineLink/InlineLink";
 
 export function CoronaPage() {
     return (
