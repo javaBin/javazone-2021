@@ -23,6 +23,10 @@
         @media only screen and (max-width: $screen-xs) {
             padding: 1rem;
         }
+
+        @media only screen and (max-width: $screen-xxxs) {
+            background: #191919;
+        }
     }
     a {
         color: white;
