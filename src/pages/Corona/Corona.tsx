@@ -75,6 +75,8 @@ export function CoronaPage() {
                     <p>
                         We will continue to update the web pages with new information in the coming days.
                     </p>
+
+                    <p>Last updated <b>05.12.2021</b></p>
                 </p>
             </Section>
         </>
