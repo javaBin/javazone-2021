@@ -25,8 +25,8 @@ import {FoodPage} from "./pages/Food/Food";
 
 const routes: NavRoute[] = [
   {title: 'Info', url: '/info', show: true},
-  // {title: 'Program', url: '/program', show: true},
-  // {title: 'Program', url: '/program/:sessionId', show: false},
+  {title: 'Program', url: '/program', show: true},
+  {title: 'Program', url: '/program/:sessionId', show: false},
   // {title: 'Workshops', url: '/workshops', show: true},
   // {title: 'Workshops', url: '/workshops/:sessionId', show: false},
   // {title: 'Tickets', url: '/tickets', show: true},
