@@ -191,7 +191,7 @@ export const partnerList: Partner[] = [
         "name": "Skatteetaten"
     },
     {
-        "homepageUrl": "https://github.com/tolletaten/javazone2021/blob/main/README.md",
+        "homepageUrl": "https://github.com/tolletaten/javazone2021",
         "logoUrl": "https://d3o108dy577i1m.cloudfront.net/2019/logos/toll.svg",
         "name": "Tolletaten"
     },
