@@ -1,5 +1,4 @@
 import {VikingBanner} from "../../components/PageBanner/PageBanner";
-import {CenterSection} from "../../components/CenterSection/CenterSection";
 import React from "react";
 import {useFetch} from "../../core/hooks/UseFetch";
 import {ProgramData} from "../../core/models/Program.model";
