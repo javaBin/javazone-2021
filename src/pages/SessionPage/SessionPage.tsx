@@ -36,11 +36,11 @@ export function SessionPage() {
     return (
         <>
             <VikingBanner header={session.title} subHeader={session.speakers.map(speaker => speaker.name).join(", ")}/>
-            <CenterSection color={color} header={<h1>Abstract</h1>}>
+            <Section color={color} header={<h1>Abstract</h1>}>
                 <p className={styles.preLine}>
                     {session.abstract}
                 </p>
-            </CenterSection>
+            </Section>
             {
                 dateAndTime && <Section color={color} header={<h1>Day & time</h1>}>
                     <p className={styles.preLine}>
