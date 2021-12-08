@@ -34,7 +34,7 @@ const routes: NavRoute[] = [
   {title: 'Speakers', url: '/speakers', show: true},
   {title: 'Partners', url: '/partners', show: true},
   {title: 'Kids', url: '/kids', show: false},
-  // {title: 'Frivillige', url: '/volunteers', show: true},
+  {title: 'Program', url: '/ourtribe', show: false},
   {title: 'About', url: '/about', show: true},
   {title: 'Cookies', url: '/privacy-cookies', show: false},
   {title: 'Corona', url: '/corona', show: false},
@@ -64,6 +64,7 @@ function App() {
           <Route exact path="/" component={FrontPage} />
           <Route exact path="/info" component={InfoPage} />
           <Route exact path="/program" component={ProgramPage} />
+          <Route exact path="/ourtribe" component={ProgramPage} />
           <Route exact path="/program/:sessionId" component={SessionPage} />
           <Route exact path="/workshops" component={WorkshopPage} />
           <Route exact path="/workshops/:sessionId" component={SessionPage} />
