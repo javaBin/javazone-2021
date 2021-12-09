@@ -129,10 +129,6 @@
   cursor: pointer;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
-  &.active {
-    color: black;
-    background: white;
-  }
 
   &:hover {
     color: black;
