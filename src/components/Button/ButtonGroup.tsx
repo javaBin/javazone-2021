@@ -1,4 +1,4 @@
-import React, { useState, ReactElement } from 'react';
+import React, {ReactElement} from 'react';
 import styles from './Button.module.scss';
 
 export interface ActiveButton {
@@ -10,19 +10,16 @@ export interface ActiveButton {
 interface ButtonGroupProps {
     children: React.ReactElement<any>[];
     activeButton: (button: ActiveButton) => void;
-    defaultButton?: number;
+    defaultValue?: string;
 }
 
 export function ButtonGroup(props: ButtonGroupProps) {
-    const [activeButton, setActiveButton] = useState<ActiveButton | undefined>();
-
     function handleClick(child: ReactElement<any>, key: number) {
         const activeButton = {name: child.props.children, value: child.props.value, key};
-        setActiveButton(activeButton);
         props.activeButton(activeButton);
     }
 
-    const active = !activeButton ? props.defaultButton : activeButton.key
+    const active = props.children.findIndex(c => c.props.value === props.defaultValue) ?? 0
 
     return (
         <div className={styles.buttonGroup}>

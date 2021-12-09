@@ -116,3 +116,29 @@
   padding-top: 0.5rem;
   font-size: 2rem
 }
+
+.filterButton{
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 3px;
+  border: 2px solid white;
+  background: none;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  &.active {
+    color: black;
+    background: white;
+  }
+
+  &:hover {
+    color: black;
+    background: white;
+  }
+  @media only screen and (max-width: $screen-xxs) {
+    width: 100%;
+  }
+}

@@ -1,13 +1,15 @@
-import React, {useState} from "react";
-import styles from './Program.module.scss'
-import {useFetch} from "../../core/hooks/UseFetch";
-import {ProgramData, SessionsData} from "../../core/models/Program.model";
-import {Link} from "react-router-dom";
-import {capitalizeFirstLetter, getDayAndTime, partition} from "../../core/utils/util";
-import {ButtonGroup} from "../../components/Button/ButtonGroup";
-import {CheckCircle, Circle} from "react-feather";
-import {useLocalStorage} from "../../core/hooks/UseLocalStorage";
 import {parseISO} from "date-fns";
+import React from "react";
+import {CheckCircle, Circle} from "react-feather";
+import {Link} from "react-router-dom";
+import {ButtonGroup} from "../../components/Button/ButtonGroup";
+import {useFetch} from "../../core/hooks/UseFetch";
+import {useLocalStorage} from "../../core/hooks/UseLocalStorage";
+import {useSessionStorage} from "../../core/hooks/UseSessionStorage";
+import {ProgramData, SessionsData} from "../../core/models/Program.model";
+import {capitalizeFirstLetter, getDayAndTime, partition} from "../../core/utils/util";
+import {Button} from "../../components/Button/Button";
+import styles from './Program.module.scss';
 
 function Session(props: { session: SessionsData, setFavorites: () => void }) {
     const {speakers, format, length, id, title, startTime, language, favorite, room} = props.session;
@@ -115,10 +117,10 @@ function Sessions(props: { sessions: SessionsData[], favorites: string[], setFav
     </>
 }
 
-function DayFilter(props: { setFilter: (name: string) => void }) {
+function DayFilter(props: { filter?: string, setFilter: (name: string) => void }) {
     return <div className={styles.dayFilter}>
         <div className={styles.filterHeader}>Day</div>
-        <ButtonGroup defaultButton={0} activeButton={button => props.setFilter(button.value)}>
+        <ButtonGroup defaultValue={props.filter} activeButton={button => props.setFilter(button.value)}>
             <button>Both</button>
             <button value="2021-12-08">Wednesday</button>
             <button value="2021-12-09">Thursday</button>
@@ -126,10 +128,11 @@ function DayFilter(props: { setFilter: (name: string) => void }) {
     </div>
 }
 
-function LanguageFilter(props: { setFilter: (name: string) => void }) {
+function LanguageFilter(props: { filter?: string, setFilter: (name: string) => void }) {
     return <div>
         <div className={styles.filterHeader}>Language</div>
-        <ButtonGroup defaultButton={0} activeButton={button => props.setFilter(button.value)}>
+        <ButtonGroup defaultValue={props.filter}
+                     activeButton={button => props.setFilter(button.value)}>
             <button>Both</button>
             <button value="no">Norwegian</button>
             <button value="en">English</button>
@@ -139,12 +142,14 @@ function LanguageFilter(props: { setFilter: (name: string) => void }) {
 
 function FormatFilter(props: {
     sessions: SessionsData[] | undefined,
+    filter?: string;
     setFilter: (name: string) => void
     favorites: string[]
 }) {
     return <div>
         <div className={styles.filterHeader}>Format</div>
-        <ButtonGroup defaultButton={0} activeButton={button => props.setFilter(button.value)}>
+        <ButtonGroup defaultValue={props.filter}
+                     activeButton={button => props.setFilter(button.value)}>
             <button>All ({props.sessions && props.sessions.length})</button>
             <button value="presentation">Presentations
                 ({props.sessions && props.sessions.filter(s => s.format === "presentation").length})
@@ -164,9 +169,9 @@ export function Program() {
     const sessions = data && data.sessions.filter(s => s.format !== "workshop")
     sessions?.forEach(s => s.favorite = favorites.includes(s.id))
 
-    const [languageFilter, setLanguageFilter] = useState<string | undefined>(undefined)
-    const [dayfilter, setDayFilter] = useState<string | undefined>(undefined)
-    const [formatFilter, setFormatFilter] = useState<string | undefined>(undefined)
+    const [languageFilter, setLanguageFilter] = useSessionStorage<string | undefined>('filter-language', undefined)
+    const [dayfilter, setDayFilter] = useSessionStorage<string | undefined>('filter-day', undefined)
+    const [formatFilter, setFormatFilter] = useSessionStorage<string | undefined>('filter-format', undefined)
 
     const filteredSession = sessions
         ?.filter(s => !!languageFilter ? s.language === languageFilter : true)
@@ -182,10 +187,20 @@ export function Program() {
     return <div>
         <div className={`${styles.container} ${styles.filterContainer}`}>
             <div className={styles.filterSubContainer}>
-                <DayFilter setFilter={setDayFilter}/>
-                <LanguageFilter setFilter={setLanguageFilter}/>
+                <DayFilter filter={dayfilter} setFilter={setDayFilter}/>
+                <LanguageFilter filter={languageFilter} setFilter={setLanguageFilter}/>
             </div>
-            <FormatFilter setFilter={setFormatFilter} sessions={filteredSession} favorites={filteredFavorites}/>
+            <FormatFilter
+                filter={formatFilter}
+                setFilter={setFormatFilter}
+                sessions={filteredSession}
+                favorites={filteredFavorites}/>
+            <Button className={styles.filterButton}
+                    onClick={() => {
+                        setLanguageFilter(undefined)
+                        setDayFilter(undefined)
+                        setFormatFilter(undefined)
+                    }}>Clear filters</Button>
         </div>
         <div className={styles.container}>
             {!!formatFilteredSession && <Sessions sessions={formatFilteredSession}
