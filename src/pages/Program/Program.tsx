@@ -1,13 +1,14 @@
-import React, {useState} from "react";
-import styles from './Program.module.scss'
-import {useFetch} from "../../core/hooks/UseFetch";
-import {ProgramData, SessionsData} from "../../core/models/Program.model";
-import {Link} from "react-router-dom";
-import {capitalizeFirstLetter, getDayAndTime, partition} from "../../core/utils/util";
-import {ButtonGroup} from "../../components/Button/ButtonGroup";
-import {CheckCircle, Circle} from "react-feather";
-import {useLocalStorage} from "../../core/hooks/UseLocalStorage";
-import {parseISO} from "date-fns";
+import { parseISO } from "date-fns";
+import React from "react";
+import { CheckCircle, Circle } from "react-feather";
+import { Link } from "react-router-dom";
+import { ButtonGroup } from "../../components/Button/ButtonGroup";
+import { useFetch } from "../../core/hooks/UseFetch";
+import { useLocalStorage } from "../../core/hooks/UseLocalStorage";
+import { useSessionStorage } from "../../core/hooks/UseSessionStorage";
+import { ProgramData, SessionsData } from "../../core/models/Program.model";
+import { capitalizeFirstLetter, getDayAndTime, partition } from "../../core/utils/util";
+import styles from './Program.module.scss';
 
 function Session(props: { session: SessionsData, setFavorites: () => void }) {
     const {speakers, format, length, id, title, startTime, language, favorite, room} = props.session;
@@ -164,9 +165,9 @@ export function Program() {
     const sessions = data && data.sessions.filter(s => s.format !== "workshop")
     sessions?.forEach(s => s.favorite = favorites.includes(s.id))
 
-    const [languageFilter, setLanguageFilter] = useState<string | undefined>(undefined)
-    const [dayfilter, setDayFilter] = useState<string | undefined>(undefined)
-    const [formatFilter, setFormatFilter] = useState<string | undefined>(undefined)
+    const [languageFilter, setLanguageFilter] = useSessionStorage<string | undefined>('filter-language', undefined)
+    const [dayfilter, setDayFilter] = useSessionStorage<string | undefined>('filter-day', undefined)
+    const [formatFilter, setFormatFilter] = useSessionStorage<string | undefined>('filter-format', undefined)
 
     const filteredSession = sessions
         ?.filter(s => !!languageFilter ? s.language === languageFilter : true)
