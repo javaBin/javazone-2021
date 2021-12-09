@@ -8,11 +8,13 @@ export interface ButtonProps {
     onClick?: () => void;
     size?: ButtonSize;
     children: React.ReactNode;
+    className?: string
 }
 
 export function Button(props: ButtonProps) {
     const classes = classnames(
         styles.button,
+        props.className,
         {[styles.small]: props.size === 'small'}
     )
     return (
