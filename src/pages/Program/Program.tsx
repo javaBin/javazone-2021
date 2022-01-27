@@ -12,7 +12,7 @@ import {Button} from "../../components/Button/Button";
 import styles from './Program.module.scss';
 
 function Session(props: { session: SessionsData, setFavorites: () => void }) {
-    const {speakers, format, length, id, title, startTime, language, favorite, room} = props.session;
+    const {speakers, format, length, id, title, startTime, language, favorite, room, video} = props.session;
     const lang = language === 'no' ? 'Norwegian' : 'English'
     const capFormat = capitalizeFirstLetter(format)
     const date = startTime && parseISO(startTime)
@@ -26,7 +26,7 @@ function Session(props: { session: SessionsData, setFavorites: () => void }) {
                 <span className={styles.speaker}>
                     {speakers && speakers.map(speaker => speaker.name).join(", ")}
                 </span>
-                <span className={styles.subinfo}>{`${capFormat}, ${lang}, ${dateAndTime} ${length} min${roomFormat}`}</span>
+                <span className={styles.subinfo}>{`${!!video ? '🎬' : ''}${capFormat}, ${lang}, ${dateAndTime} ${length} min${roomFormat}`}</span>
             </Link>
             <button aria-label="Add to favorites"
                     className={styles.favButton}

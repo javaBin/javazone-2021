@@ -4,10 +4,10 @@ import {useFetch} from "../../core/hooks/UseFetch";
 import {ProgramData} from "../../core/models/Program.model";
 import {useParams} from "react-router";
 import {Section} from "../../components/Section/Section";
-import styles from './Session.module.scss'
 import {parseISO} from "date-fns";
 import {getDayAndTime} from "../../core/utils/util";
 import Link from "../../components/Link/Link";
+import styles from './Session.module.scss'
 
 const colors: ColorChoices[] = ['pink', 'blue', 'green']
 export type ColorChoices = 'pink' | 'blue' | 'green';
@@ -35,6 +35,16 @@ export function SessionPage() {
     return (
         <>
             <VikingBanner header={session.title} subHeader={session.speakers.map(speaker => speaker.name).join(", ")}/>
+            {
+                session.video && <div className={styles.vimeoWrapper}>
+                    <iframe className={styles.vimeo}
+                            title="program video"
+                            src={`https://player.vimeo.com/video/${session.video}`}
+                            frameBorder="0"
+                            allowFullScreen>
+                    </iframe>
+                </div>
+            }
             <Section color={color} header={<h1>Abstract</h1>}>
                 <p className={styles.preLine}>
                     {session.abstract}
