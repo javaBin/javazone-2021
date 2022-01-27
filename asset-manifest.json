@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.8ddd9bb0.chunk.css",
-    "main.js": "/static/js/main.365a9d67.chunk.js",
-    "main.js.map": "/static/js/main.365a9d67.chunk.js.map",
+    "main.css": "/static/css/main.fbbd6e0d.chunk.css",
+    "main.js": "/static/js/main.ee9917a4.chunk.js",
+    "main.js.map": "/static/js/main.ee9917a4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e4995eab.js",
     "runtime-main.js.map": "/static/js/runtime-main.e4995eab.js.map",
     "static/js/2.f15d503d.chunk.js": "/static/js/2.f15d503d.chunk.js",
     "static/js/2.f15d503d.chunk.js.map": "/static/js/2.f15d503d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.8ddd9bb0.chunk.css.map": "/static/css/main.8ddd9bb0.chunk.css.map",
+    "static/css/main.fbbd6e0d.chunk.css.map": "/static/css/main.fbbd6e0d.chunk.css.map",
     "static/js/2.f15d503d.chunk.js.LICENSE.txt": "/static/js/2.f15d503d.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/static/media/LunatixLightRegular.7f09c090.otf"
   },
   "entrypoints": [
     "static/js/runtime-main.e4995eab.js",
     "static/js/2.f15d503d.chunk.js",
-    "static/css/main.8ddd9bb0.chunk.css",
-    "static/js/main.365a9d67.chunk.js"
+    "static/css/main.fbbd6e0d.chunk.css",
+    "static/js/main.ee9917a4.chunk.js"
   ]
 }
