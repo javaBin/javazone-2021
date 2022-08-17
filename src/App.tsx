@@ -64,7 +64,10 @@ function App() {
           <Route exact path="/" component={FrontPage} />
           <Route exact path="/info" component={InfoPage} />
           <Route exact path="/program" component={ProgramPage} />
-          <Route exact path="/ourtribe" component={ProgramPage} />
+          <Route exact path="/ourtribe" render={() => {
+            window.location.href = 'https://java.no';
+            return <AboutUsPage/>
+          }} />
           <Route exact path="/program/:sessionId" component={SessionPage} />
           <Route exact path="/workshops" component={WorkshopPage} />
           <Route exact path="/workshops/:sessionId" component={SessionPage} />
